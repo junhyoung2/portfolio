@@ -1,0 +1,52 @@
+#cover {
+  @include tablet{}
+  background-color: $blk-background;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rem 5rem;
+
+  .cover-content {
+    text-align: left;
+    margin-top: 2rem;
+
+       h2 {
+      @include font-white50();
+      margin: 0 0 1.5rem 0;
+      &.highlight {
+        color: #f97316;
+        font-weight: 400;
+        font-size: 80px;
+      }
+    }
+
+    p {
+      margin-top: 2rem;
+      font-family: "Paperlogy";
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.8;
+      max-width: 900px;
+    }
+
+    .highlight {
+      color: #f97316;
+    }
+  }
+
+  .arrow-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .bottom-arrow {
+      @include btn-style();
+      background: none;
+      color: #f97316;
+      font-size: 2.5rem;
+    }
+  }
+}

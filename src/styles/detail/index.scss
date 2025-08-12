@@ -1,0 +1,24 @@
+#index {
+  background-color: $blk-background; 
+  color: #fff;
+  height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  @include font-white50();
+  cursor: pointer;
+  h2 {
+    margin-bottom: 108px; 
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin-bottom: 36px;
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

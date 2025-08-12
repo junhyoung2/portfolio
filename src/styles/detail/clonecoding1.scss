@@ -1,0 +1,58 @@
+.clone-container {
+  background-color: #F0EEEB;
+
+  h2 {
+    display: flex;
+    margin-bottom: 2rem;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    @include font-gray50();
+  }
+
+  .clone-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 3rem;
+    justify-items: center;
+  }
+
+  .clone-item {
+    text-align: center;
+
+    img {
+      width: 330px;
+      height: 450px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        margin-bottom: 0.5rem;
+        a {
+          text-decoration: none;
+          color: inherit;
+          border-bottom: 1px solid;
+        }
+      }
+    }
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+    img {
+      width: 930px;
+      height: 530px;
+    }
+  }
+}

@@ -17,3 +17,47 @@
     @content;
   }
 }
+//버튼 컴포넌트
+@mixin btn-style{
+    background-color:none;
+    color: #F97316;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    &:hover{
+       transform: scale(1.2);
+    }
+}
+
+
+// 흰색, 폰트사이즈 50, medium
+@mixin font-white50 {
+  font-family: "Paperlogy";
+  font-weight: 500; // medium
+  font-size: 50px;
+  color: #ffffff;
+}
+
+// 흰색, 폰트사이즈 24, regular
+@mixin font-white24 {
+  font-family: "Paperlogy";
+  font-weight: 400; // regular
+  font-size: 24px;
+  color: #ffffff;
+}
+
+// 회색, 폰트사이즈 50, medium
+@mixin font-gray50 {
+  font-family: "Paperlogy";
+  font-weight: 500; // medium
+  font-size: 50px;
+  color: #505050;
+}
+
+// 회색, 폰트사이즈 24, regular
+@mixin font-gray24 {
+  font-family: "Paperlogy";
+  font-weight: 400; // regular
+  font-size: 24px;
+  color: #505050;
+}

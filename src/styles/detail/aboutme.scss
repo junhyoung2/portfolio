@@ -1,0 +1,93 @@
+#aboutme {
+  background-color: #f0eeeb;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #505050;
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px; 
+
+    img {
+      width: 270px;
+      height: 350px; 
+      object-fit: cover;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      margin-bottom: 0;
+    }
+
+    .info {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: #222;
+        margin-bottom: 24px;
+
+        svg {
+          font-size: 35px;
+          margin-right: 12px;
+          color: #222;
+        }
+
+        span {
+          @include font-gray24();
+        }
+      }
+    }
+  }
+
+  .description {
+    margin-top: 50px;
+    max-width: 1000px;
+    @include font-gray24();
+    margin-bottom: 58px;
+    text-align: center; /* 가운데 정렬 추가 */
+  }
+
+  .git-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #050505;
+    border-radius: 20px;
+    padding: 12px 30px;
+    cursor: pointer;
+    user-select: none;
+
+    a {
+      display: flex; 
+      align-items: center;
+      text-decoration: none; 
+      color: inherit; 
+    }
+
+    p {
+      
+      margin-left: 12px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #f97316;
+    }
+
+    .git {
+      font-size: 28px;
+      color: #f97316;
+      background: none;
+    }
+  }
+}

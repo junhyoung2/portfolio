@@ -1,0 +1,91 @@
+#myproject {
+    background-color: #f0eeeb;
+}
+@mixin btn-style {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.my-projects-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  
+}
+
+.section-title {
+    @include font-gray50();
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.project-list {
+    border-top: 1px solid #505050;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+
+    .project-info {
+        h3 {
+            @include font-gray24();
+            margin: 0 0 0.5rem 0;
+        }
+        p {
+            font-size: 16px;
+            color: #505050;
+            margin: 0 0 1rem 0;
+        }
+        .tech-stack {
+            font-size: 16px;
+            color: #505050;
+            span {
+                font-size: 16px;
+                color: #505050;
+            }
+        }
+    }
+
+    .project-link {
+        color: #505050;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.bottom-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+
+    .nav-link {
+        color: #505050;
+        font-size: 32px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    // 기존 arrow-container 스타일은 유지한 채로 사용됩니다.
+    .arrow-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        cursor: pointer;
+
+        .bottom-arrow {
+            @include btn-style();
+            background: none;
+            color: #f97316;
+            font-size: 2.5rem;
+        }
+    }
+}

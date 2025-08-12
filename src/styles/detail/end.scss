@@ -1,0 +1,52 @@
+#end {
+  background-color: #050608;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+ padding: 10rem 5rem;
+
+  .end-text {
+    text-align: left;
+
+    h2 {
+      @include font-white50();
+      margin: 0 0 1.5rem 0;
+      &.highlight {
+        color: #f97316;
+        font-weight: 400;
+        font-size: 80px;
+      }
+      &.myname {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 80px;
+
+      }
+    }
+  }
+
+  .git-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #f97316;
+      font-weight: 600;
+      font-size: 1.5rem;
+      gap: 0.5rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .git {
+      font-size: 2rem;
+      color: #f97316;
+    }
+  }
+}
