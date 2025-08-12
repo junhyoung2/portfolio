@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
+import gsap from "gsap";
 
 const Cover = () => {
+  const coverRef = useRef(null);
+
   const handleArrowClick = () => {
     const indexSection = document.getElementById("index");
     if (indexSection) {
@@ -9,8 +12,21 @@ const Cover = () => {
     }
   };
 
+  useEffect(() => {
+    const coverEl = coverRef.current;
+
+    // 배경은 이미 SCSS에서 검정 + 패딩 등 다 잡아놨으니 별도 애니메이션 안 넣음
+
+    // 내용물 아래에서 위로 올라오면서 페이드인 애니메이션
+    gsap.fromTo(
+      coverEl.querySelector(".cover-content"),
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.3 }
+    );
+  }, []);
+
   return (
-    <section id="cover">
+    <section id="cover" ref={coverRef}>
       <div className="cover-content">
         <h2>안녕하세요,</h2>
         <h2 className="highlight">프론트엔드 개발자</h2>
