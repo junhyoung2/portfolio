@@ -1,0 +1,88 @@
+#main-project {
+    background-color: #f0eeeb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+.content-container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 40px;
+    margin-top: 40px;
+}
+.form {
+    h2 {
+        @include font-gray50();
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.project-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+//타워픽 (모바일캡처)
+.project-image-tower {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+      width: 380px; 
+      height: 860px; 
+      object-fit: cover; 
+}
+.description {
+    @include font-gray24();
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.info-section {
+    margin-bottom: 25px;
+
+    .info-title {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p,
+    li {
+        @include font-gray24();
+        color: #666;
+        line-height: 1.8;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li span {
+        font-weight: bold;
+        color: #444;
+    }
+}
+
+.meta-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    li {
+        margin-bottom: 15px;
+        a,
+        .nav-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}

@@ -1,58 +1,77 @@
 .clone-container {
   background-color: #F0EEEB;
+  padding: 60px;
+}
 
-  h2 {
-    display: flex;
-    margin-bottom: 2rem;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-    @include font-gray50();
-  }
+.clone-container h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  @include font-gray50();
+}
 
-  .clone-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 3rem;
-    justify-items: center;
-  }
+.clone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
 
-  .clone-item {
-    text-align: center;
+.clone-item {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-    img {
-      width: 330px;
-      height: 450px;
-      display: block;
-      margin: 0 auto 1rem;
-    }
+.clone-item img {
 
-    .desc {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
+  max-width: 330px;
+  max-height: 430px;
+  display: block;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      li {
-        margin-bottom: 0.5rem;
-        a {
-          text-decoration: none;
-          color: inherit;
-          border-bottom: 1px solid;
-        }
-      }
-    }
-  }
+.clone-meta {
+  width: 100%;
+}
 
-  .full-width {
-    grid-column: 1 / -1;
-    img {
-      width: 930px;
-      height: 530px;
-    }
-  }
+.clone-meta .meta-title {
+  @include font-gray24();
+  margin-bottom: 1rem;
+}
+
+.clone-meta .meta-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clone-meta .meta-links li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 20px;
+  color: #505050;
+}
+
+.clone-meta .meta-links li span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ 
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.full-width img {
+  max-width: 930px;
+  max-height: 530px;
+  width: auto;
 }

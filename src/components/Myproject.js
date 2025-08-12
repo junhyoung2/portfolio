@@ -27,42 +27,42 @@ const Myproject = () => {
       name : "Ririm",
       description: "굿즈 쇼핑몰",
       tech: "FIGMA, REACT/ROUTER, SCSS, GIT/GITHUB",
-      link: "/shopping", // Shopping1 컴포넌트 경로
+      link: "/shopping1", // Shopping1 컴포넌트 경로
     },
     {
       title: "웹프로젝트 2",
       name : "TowerPick",
       description: "주차 관리 시스템",
       tech: "Figma / PhotoShop, React, SCSS, Supabase, GIT/GitHub",
-      link: "/tower", // Tower1 컴포넌트 경로
+      link: "/tower1", // Tower1 컴포넌트 경로
     },
     {
       title: "끝말잇기 게임",
       name : "끝말이",
       description: "익숙한 인터페이스인 끝말잇기 게임",
       tech: "Figma, HTML, CSS, JavaScript, GIT/GitHub",
-      link: "/endtalk", // End1 컴포넌트 경로
+      link: "/endtalk1", // End1 컴포넌트 경로
     },
     {
       title: "퀴즈게임",
        name : "조사병단 도전과제",
       description: "진격의 거인 세계관 플래시 퀴즈 게임",
       tech: "REACT, SCSS, GIT/GITHUB",
-      link: "/quiz", // Quiz1 컴포넌트 경로
+      link: "/quiz1", // Quiz1 컴포넌트 경로
     },
     {
       title: "블로그형 웹페이지",
        name : "Nomad Planet",
       description: "여행 정보 블로그형 웹페이지",
       tech: "REACT, SCSS, GIT/GITHUB",
-      link: "/blog", // Blog1 컴포넌트 경로
+      link: "/blog1", // Blog1 컴포넌트 경로
     },
     {
       title: "FIGMA 기획안",
       name : "Playmap",
       description: "사용자의 위치 기반 주변 놀이 시설  탐색 모바일 기반 웹앱",
       tech: "FIGMA",
-      link: "/figma", // Figma1 컴포넌트 경로
+      link: "/figma1", // Figma1 컴포넌트 경로
     },
   ];
 

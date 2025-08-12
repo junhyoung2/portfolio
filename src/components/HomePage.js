@@ -1,6 +1,4 @@
-// src/components/HomePage.js
 
-import React from "react";
 import Aboutme from "./Aboutme";
 import Cover from "./Cover";
 import Index from "./Index";
