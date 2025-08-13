@@ -5,15 +5,17 @@ const Publishing = () => {
 
             <div className="form">
                 <h2>YES24 상세 페이지</h2>
-                <img src="/images/yes24.png" alt="yes24" />
+                <img
+                    src={process.env.PUBLIC_URL + "/images/yes24.png"}
+                    alt="yes24"
+                />
                 <p>제작에 사용된 스킬 :</p>
                 <ul>
                     <li>HTML, CSS</li>
                 </ul>
                 <p>
                     핵심 기능<br />
-                    온라인 서점 사이트와 같이 책 사진 클릭 시 책 이미지가
-                    ROTATE되어 책 측, 뒷면을 표현했습니다.
+                    온라인 서점 사이트와 같이 책 사진 클릭 시 책 이미지가 ROTATE되어 책 측, 뒷면을 표현했습니다.
                 </p>
                 <p>
                     배포방식 : GITHUB
@@ -38,7 +40,10 @@ const Publishing = () => {
 
             <div className="form">
                 <h2>Gallery</h2>
-                <img src="/images/gallery.png" alt="gallery" />
+                <img
+                    src={process.env.PUBLIC_URL + "/images/gallery.png"}
+                    alt="gallery"
+                />
                 <p>제작에 사용된 스킬 :</p>
                 <ul>
                     <li>HTML, CSS, JavaScript</li>
@@ -70,7 +75,10 @@ const Publishing = () => {
 
             <div className="form">
                 <h2>이미지 캐러셀</h2>
-                <img src="/images/carousel.png" alt="carousel" />
+                <img
+                    src={process.env.PUBLIC_URL + "/images/carousel.png"}
+                    alt="carousel"
+                />
                 <p>제작에 사용된 스킬 :</p>
                 <ul>
                     <li>HTML, CSS, JavaScript</li>
@@ -104,7 +112,10 @@ const Publishing = () => {
 
             <div className="form">
                 <h2>Grid</h2>
-                <img src="/images/grid.png" alt="grid" />
+                <img
+                    src={process.env.PUBLIC_URL + "/images/grid.png"}
+                    alt="grid"
+                />
                 <p>제작에 사용된 스킬 :</p>
                 <ul>
                     <li>HTML, CSS, JavaScript</li>
