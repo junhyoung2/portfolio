@@ -1,8 +1,48 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
 const Skills = () => {
+  const skillsRef = useRef(null);
+
+  useEffect(() => {
+    const skillsEl = skillsRef.current;
+
+    const handleScroll = () => {
+      if (!skillsEl) return;
+      const rect = skillsEl.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top < windowHeight * 0.7 && rect.bottom > 0) {
+        // 제목 애니메이션
+        gsap.fromTo(
+          skillsEl.querySelector("h2"),
+          { opacity: 0, y: 40, scale: 0.95 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "power3.out" }
+        );
+        // 아이콘 stagger + scale + rotate
+        gsap.fromTo(
+          skillsEl.querySelectorAll(".skill-icon-box"),
+          { opacity: 0, scale: 0.7, rotate: -15, y: 30 },
+          { opacity: 1, scale: 1, rotate: 0, y: 0, duration: 0.7, stagger: 0.08, delay: 0.2, ease: "back.out(1.7)" }
+        );
+        // 텍스트 fade-in
+        gsap.fromTo(
+          skillsEl.querySelectorAll(".skill-text-box"),
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, delay: 0.4, ease: "power2.out" }
+        );
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div id="skills">
+    <div id="skills" ref={skillsRef}>
       <h2>Skills & Tools</h2>
       <ul className="skills-img">
         <li>
@@ -95,10 +135,10 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/slack.png" alt="slack" />
+            <img src="/images/supabase.png" alt="supabase" />
           </div>
           <div className="skill-text-box">
-            <span>Slack</span>
+            <span>SupaBase</span>
           </div>
         </li>
       </ul>

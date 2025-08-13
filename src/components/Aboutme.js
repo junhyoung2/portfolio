@@ -1,11 +1,64 @@
-  import { IoPerson } from "react-icons/io5";
+import { IoPerson } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const Aboutme = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const aboutEl = aboutRef.current;
+
+    const handleScroll = () => {
+      if (!aboutEl) return;
+      const rect = aboutEl.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top < windowHeight * 0.7 && rect.bottom > 0) {
+        // 제목 애니메이션
+        gsap.fromTo(
+          aboutEl.querySelector("h2"),
+          { opacity: 0, y: 40, scale: 0.95 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "power3.out" }
+        );
+        // 프로필 이미지 fade-in + rotate
+        gsap.fromTo(
+          aboutEl.querySelector("img"),
+          { opacity: 0, rotate: -20, scale: 0.9 },
+          { opacity: 1, rotate: 0, scale: 1, duration: 0.8, delay: 0.2, ease: "back.out(1.7)" }
+        );
+        // info 리스트 stagger 등장
+        gsap.fromTo(
+          aboutEl.querySelectorAll(".info li"),
+          { opacity: 0, x: -30 },
+          { opacity: 1, x: 0, duration: 0.6, stagger: 0.15, delay: 0.4, ease: "power2.out" }
+        );
+        // 설명문구 fade-in
+        gsap.fromTo(
+          aboutEl.querySelector(".description"),
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.7, delay: 0.7, ease: "power2.out" }
+        );
+        // 깃허브 링크 bounce-in
+        gsap.fromTo(
+          aboutEl.querySelector(".git-container"),
+          { opacity: 0, y: 40, scale: 0.8 },
+          { opacity: 1, y: 0, scale: 1, duration: 0.7, delay: 1, ease: "bounce.out" }
+        );
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section id="aboutme">
+    <section id="aboutme" ref={aboutRef}>
       <h2>ABOUT ME</h2>
       <div className="content">
         <img src="/images/myprofile.png" alt="profile" />

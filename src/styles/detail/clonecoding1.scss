@@ -14,7 +14,7 @@
 .clone-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 10px;
   justify-items: center;
 }
 
@@ -26,7 +26,6 @@
 }
 
 .clone-item img {
-
   max-width: 330px;
   max-height: 430px;
   display: block;
@@ -55,15 +54,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 5px 0;
-  font-size: 20px;
+  font-size: 16px;
   color: #505050;
 }
 
 .clone-meta .meta-links li span {
   display: flex;
   align-items: center;
-  gap: 10px;
- 
+  gap: 5px;
 }
 
 .full-width {
@@ -74,4 +72,83 @@
   max-width: 930px;
   max-height: 530px;
   width: auto;
+}
+
+// 반응형 처리
+@include desktop {
+  .clone-container {
+    padding: 40px;
+  }
+  .clone-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .clone-item img {
+    max-width: 220px;
+    max-height: 300px;
+  }
+  .full-width img {
+    max-width: 700px;
+    max-height: 400px;
+  }
+}
+
+@include tablet {
+  .clone-container {
+    padding: 24px 8px;
+  }
+  .clone-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .clone-item img {
+    max-width: 160px;
+    max-height: 200px;
+  }
+  .full-width img {
+    max-width: 350px;
+    max-height: 220px;
+  }
+  .clone-meta .meta-title {
+    font-size: 18px;
+  }
+  .clone-meta .meta-links li {
+    font-size: 13px;
+  }
+}
+
+@include mobile {
+  .clone-container {
+    padding: 16px 4px;
+  }
+  .clone-grid {
+    grid-template-columns: 1fr; // 1열 정렬
+    gap: 24px;                  // 간격 조금 더 넓게
+    justify-items: center;
+  }
+  .clone-item {
+    align-items: center;     // 왼쪽 정렬
+    text-align: center;
+    width: 100%;
+  }
+  .clone-item img {
+    max-width: 140vw;            // 이미지 더 크게
+    max-height: 360px;
+  }
+  .full-width img {
+    max-width: 99vw;
+    max-height: 260px;
+  }
+  .clone-meta {
+    width: 100%;
+  }
+  .clone-meta .meta-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .clone-meta .meta-links li {
+    font-size: 13px;
+    justify-content:space-around;
+    gap: 12px;
+  }
 }

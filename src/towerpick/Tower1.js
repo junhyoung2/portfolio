@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
-const Shopping1 = () => {
+const Tower1 = () => {
     const navigate = useNavigate();
     const goToTower2 = () => {
         navigate("/tower2");
@@ -84,4 +84,4 @@ SCSS
     );
 };
 
-export default Shopping1;
+export default Tower1;

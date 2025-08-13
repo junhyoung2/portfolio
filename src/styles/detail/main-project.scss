@@ -6,33 +6,63 @@
     align-items: center;
     padding: 0 10px;
 }
+
 .content-container {
     width: 100%;
-    max-width: 1024px;
     padding: 40px;
     margin-top: 40px;
 }
+
 .form {
     h2 {
         @include font-gray50();
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
+
+// PC용 이미지
 .project-image {
     width: 100%;
+    max-width: 700px;
     height: auto;
     margin-bottom: 30px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-//타워픽 (모바일캡처)
+
+// 모바일용 이미지
+.project-image-mobile {
+    width: 320px;
+    height: 640px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    display: block;
+}
+
+//타워픽 (특수 모바일캡처)
 .project-image-tower {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-      width: 380px; 
-      height: 860px; 
-      object-fit: cover; 
+    width: 380px;
+    height: 860px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    display: block;
 }
+
+//endtalk (특수 모바일캡처)
+.project-image-end {
+    width: 470px;
+    height: 860px;
+    object-fit: cover;
+    margin: 0 auto 30px auto;
+    border-radius: 20px;
+    display: block;
+}
+
 .description {
     @include font-gray24();
     text-align: left;
@@ -77,12 +107,140 @@
         .nav-link {
             display: flex;
             align-items: center;
-            text-decoration: none;
+            text-decoration: underline;
             color: #333;
             font-weight: bold;
             span {
                 font-size: 1rem;
             }
+        }
+    }
+}
+
+.arrow-container {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-end;
+
+    .bottom-arrow {
+        @include btn-style();
+        background: none;
+        color: #f97316;
+        font-size: 5rem;
+    }
+}
+
+// 반응형 처리
+@include desktop {
+    .content-container {
+        padding: 24px;
+        margin-top: 24px;
+    }
+    .project-image {
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+    .project-image-mobile {
+        width: 220px;
+        height: 420px;
+        margin-bottom: 20px;
+    }
+    .project-image-tower,
+    .project-image-end {
+        width: 260px;
+        height: 600px;
+        margin-bottom: 30px;
+    }
+    .form h2 {
+        font-size: 2rem;
+    }
+    .description,
+    .info-section p,
+    .info-section li {
+        font-size: 15px;
+    }
+    .arrow-container .bottom-arrow {
+        font-size: 3rem;
+    }
+}
+
+@include tablet {
+    .content-container {
+        padding: 8px;
+        margin-top: 10px;
+    }
+    .project-image {
+        max-width: 98vw;
+        margin-bottom: 12px;
+    }
+    .project-image-mobile {
+        width: 160px;
+        height: 320px;
+        margin-bottom: 12px;
+    }
+    .project-image-tower,
+    .project-image-end {
+        width: 120px;
+        height: 260px;
+        margin-bottom: 14px;
+    }
+    .form h2 {
+        font-size: 1.2rem;
+    }
+    .description,
+    .info-section p,
+    .info-section li {
+        font-size: 13px;
+    }
+    .arrow-container {
+        margin-top: 18px;
+        .bottom-arrow {
+            font-size: 2rem;
+        }
+    }
+}
+
+@include mobile {
+    #main-project {
+        max-height: none;
+    }
+    .content-container {
+        padding: 2px;
+        margin-top: 2px;
+    }
+    .project-image {
+        max-width: 180vw;
+        margin-bottom: 6px;
+        border-radius: 10px;
+    }
+    .project-image-mobile {
+        width: 90vw;
+        height: 100%;
+        margin-bottom: 6px;
+        border-radius: 10px;
+    }
+    .project-image-tower,
+    .project-image-end {
+        width: 90vw;
+        height: 100%;
+        margin-bottom: 6px;
+        border-radius: 10px;
+    }
+    .form h2 {
+        font-size: 1rem;
+    }
+    .description,
+    .info-section p,
+    .info-section li {
+        font-size: 11px;
+    }
+    .arrow-container {
+        margin-top: 8px;
+        .bottom-arrow {
+            font-size: 1.2rem;
         }
     }
 }

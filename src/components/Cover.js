@@ -14,25 +14,48 @@ const Cover = () => {
 
   useEffect(() => {
     const coverEl = coverRef.current;
+    // 텍스트를 span으로 쪼개기
+    const textEls = coverEl.querySelectorAll(".cover-animated");
+    textEls.forEach((el) => {
+      el.innerHTML = el.textContent
+        .split("")
+        .map(
+          (char, i) =>
+            `<span style="display:inline-block; opacity:0;">${char === " " ? "&nbsp;" : char}</span>`
+        )
+        .join("");
+    });
 
-    // 배경은 이미 SCSS에서 검정 + 패딩 등 다 잡아놨으니 별도 애니메이션 안 넣음
+    // 한 글자씩 순차적으로 애니메이션
+    textEls.forEach((el, idx) => {
+      gsap.to(el.querySelectorAll("span"), {
+        opacity: 1,
+        y: 0,
+        stagger: 0.04,
+        duration: 0.7,
+        delay: 0.2 + idx * 0.2,
+        ease: "power3.out",
+        y: 0,
+        from: { y: 30 }
+      });
+    });
 
-    // 내용물 아래에서 위로 올라오면서 페이드인 애니메이션
+    // 커버 전체 scale-in 효과
     gsap.fromTo(
-      coverEl.querySelector(".cover-content"),
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1.2, ease: "power3.out", delay: 0.3 }
+      coverEl,
+      { scale: 0.98, filter: "blur(4px)" },
+      { scale: 1, filter: "blur(0px)", duration: 1.2, ease: "power2.out" }
     );
   }, []);
 
   return (
     <section id="cover" ref={coverRef}>
       <div className="cover-content">
-        <h2>안녕하세요,</h2>
-        <h2 className="highlight">프론트엔드 개발자</h2>
-        <h2>박준형입니다.</h2>
+        <h2 className="cover-animated">안녕하세요,</h2>
+        <h2 className="highlight cover-animated">프론트엔드 개발자</h2>
+        <h2 className="cover-animated">박준형입니다.</h2>
         <p>
-          협업과 성장에 진심인 저는, 사용자에게 먼저 다가가는 웹사이트의{" "}
+          협업과 성장에 진심인 저는, 사용자에게 먼저 다가가는 <br/>웹사이트의{" "}
           <span className="highlight">프론트엔드</span>를 담당하고자 합니다.
           <br />
           제 웹 포트폴리오를 방문해 주셔서 감사합니다.

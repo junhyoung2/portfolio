@@ -2,7 +2,7 @@ const Clonecoding4 = () => {
     return (
         <div id="clone-coding">
             <div className="content">
-                <h2>airbnb</h2>
+                <h2>CLONE CODING</h2>
                 <div className="project">
                     <h3 className="project-title">airbnb</h3>
                     <div className="img-container">

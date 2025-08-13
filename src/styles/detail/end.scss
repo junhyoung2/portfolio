@@ -4,8 +4,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
- padding: 10rem 5rem;
+  justify-content: space-between;
+  padding: 10rem 5rem;
 
   .end-text {
     text-align: left;
@@ -22,7 +22,6 @@
         color: #ffffff;
         font-weight: 400;
         font-size: 80px;
-
       }
     }
   }
@@ -31,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 
     a {
       display: flex;
@@ -47,6 +47,78 @@
     .git {
       font-size: 2rem;
       color: #f97316;
+    }
+  }
+
+  // 반응형 처리
+  @include desktop {
+    padding: 8rem 3rem;
+
+    .end-text {
+      h2 {
+        font-size: 48px;
+        &.highlight,
+        &.myname {
+          font-size: 60px;
+        }
+      }
+    }
+    .git-container {
+      a {
+        font-size: 1.3rem;
+      }
+      .git {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  @include tablet {
+    padding: 5rem 1.5rem;
+
+    .end-text {
+      h2 {
+        font-size: 32px;
+        margin-bottom: 1.2rem;
+        &.highlight,
+        &.myname {
+          font-size: 38px;
+        }
+      }
+    }
+    .git-container {
+      margin-bottom: 2rem;
+      a {
+        font-size: 1.1rem;
+      }
+      .git {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 2.5rem 0.5rem;
+
+    .end-text {
+      text-align: left;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        &.highlight,
+        &.myname {
+          font-size: 24px;
+        }
+      }
+    }
+    .git-container {
+      margin-bottom: 2rem;
+      a {
+        font-size: 0.95rem;
+      }
+      .git {
+        font-size: 1.1rem;
+      }
     }
   }
 }

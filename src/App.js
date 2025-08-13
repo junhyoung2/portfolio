@@ -1,6 +1,7 @@
 // src/App.js
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import "./app.scss";
 
 // 페이지 컴포넌트들 import
@@ -39,8 +40,10 @@ import Myproject from "./components/Myproject";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
+       <ScrollToTop />
       <Routes>
+       
         <Route path="/" element={<HomePage />} />
 
         {/* 쇼핑 페이지 라우트 */}
@@ -88,7 +91,7 @@ const App = () => {
         {/* Myproject 페이지 라우트 추가 */}
         <Route path="/myproject" element={<Myproject />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

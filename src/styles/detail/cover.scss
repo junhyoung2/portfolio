@@ -11,7 +11,7 @@
     text-align: left;
     margin-top: 2rem;
 
-       h2 {
+    h2 {
       @include font-white50();
       margin: 0 0 1.5rem 0;
       &.highlight {
@@ -46,6 +46,71 @@
       background: none;
       color: #f97316;
       font-size: 2.5rem;
+    }
+  }
+
+  // 반응형 처리
+  @include desktop {
+    padding: 8rem 3rem;
+
+    .cover-content {
+      h2 {
+        font-size: 40px;
+        &.highlight {
+          font-size: 60px;
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        max-width: 700px;
+      }
+    }
+    .arrow-container .bottom-arrow {
+      font-size: 2rem;
+    }
+  }
+
+  @include tablet {
+    padding: 5rem 1.5rem;
+
+    .cover-content {
+      h2 {
+        font-size: 32px;
+        &.highlight {
+          font-size: 40px;
+        }
+      }
+      p {
+        font-size: 1rem;
+        max-width: 90vw;
+      }
+    }
+    .arrow-container .bottom-arrow {
+      font-size: 1.7rem;
+    }
+  }
+
+  @include mobile {
+    padding: 2.5rem 0.5rem;
+
+    .cover-content {
+      margin-top: 1rem;
+      h2 {
+        font-size: 22px;
+        &.highlight {
+          font-size: 32px;
+        }
+      }
+      p {
+        font-size: 1rem;
+        max-width: 98vw;
+      }
+    }
+    .arrow-container {
+      margin-top: 40px;
+      .bottom-arrow {
+        font-size: 1.3rem;
+      }
     }
   }
 }

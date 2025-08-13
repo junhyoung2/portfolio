@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .content {
@@ -32,7 +31,6 @@
 .img-container {
     position: relative;
     width: 100%;
-
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -49,7 +47,6 @@
 }
 .section {
     margin-bottom: 2rem;
- 
 }
 .section ul {
     list-style-type: disc;
@@ -59,7 +56,6 @@
 .section li {
     @include font-gray24();
     margin-bottom: 1rem;
-    
 }
 .section li span {
     font-weight: bold;
@@ -70,4 +66,73 @@
 }
 .section li a:hover {
     border-bottom-color: #333;
+}
+
+// 반응형 처리
+@include desktop {
+    .content {
+        padding: 32px 12px;
+        max-width: 700px;
+    }
+    .project {
+        padding: 20px;
+    }
+    .img-container {
+        margin-bottom: 1.5rem;
+    }
+    .desc,
+    .section li {
+        font-size: 15px;
+    }
+}
+
+@include tablet {
+    #clone-coding {
+        max-width: 100vw;
+    }
+    .content {
+        padding: 18px 6px;
+        max-width: 98vw;
+    }
+    .project {
+        padding: 10px 0;
+    }
+    .img-container {
+        margin-bottom: 1rem;
+    }
+    .project-title,
+    .content h2 {
+        font-size: 1.3rem;
+    }
+    .desc,
+    .section li {
+        font-size: 13px;
+    }
+}
+
+@include mobile {
+    #clone-coding {
+        max-width: 100vw;
+    }
+    .content {
+        padding: 8px 2px;
+        max-width: 100vw;
+    }
+    .project {
+        padding: 0;
+    }
+    .img-container {
+        margin-bottom: 0.7rem;
+    }
+    .project-title,
+    .content h2 {
+        font-size: 1.1rem;
+    }
+    .desc,
+    .section li {
+        font-size: 11px;
+    }
+    .section ul {
+        padding-left: 14px;
+    }
 }
