@@ -12,10 +12,10 @@ const Shopping1 = () => {
                 <div className="form">
                     <h2>Ririm</h2>
                     <img
-                        src="/images/mainshopping.png"
-                        alt="mainshopping"
-                        className="project-image"
-                    />
+    src={process.env.PUBLIC_URL + "/images/mainshopping.png"}
+    alt="mainshopping"
+    className="project-image"
+/>
                     <p className="description">
                         Ririm는 ‘릴리(백합)’의 청초하고 순수한 이미지와
                         ‘꿈(Dream)’의 몽환적이고 감성적인 무드를 담은 이름으로,

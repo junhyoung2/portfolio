@@ -12,7 +12,7 @@ const Clonecoding1 = () => {
       <div className="clone-grid">
         {/* Tesla */}
         <div className="clone-item">
-          <img src="/images/tesla.png" alt="tesla" />
+         <img src={process.env.PUBLIC_URL + "/images/tesla.png"} alt="tesla" />
           <div className="clone-meta">
             <h3 className="meta-title">TESLA</h3>
             <ul className="meta-links">
@@ -52,7 +52,7 @@ const Clonecoding1 = () => {
 
         {/* Netflix */}
         <div className="clone-item">
-          <img src="/images/netflix.png" alt="netflix" />
+      <img src={process.env.PUBLIC_URL + "/images/netflix.png"} alt="netflix" />
           <div className="clone-meta">
             <h3 className="meta-title">NETFLIX</h3>
             <ul className="meta-links">
@@ -92,7 +92,7 @@ const Clonecoding1 = () => {
 
         {/* Airbnb */}
         <div className="clone-item">
-          <img src="/images/airbnb.png" alt="airbnb" />
+<img src={process.env.PUBLIC_URL + "/images/airbnb.png"} alt="airbnb" />
           <div className="clone-meta">
             <h3 className="meta-title">AIRBNB</h3>
             <ul className="meta-links">
@@ -132,7 +132,7 @@ const Clonecoding1 = () => {
 
         {/* My Days - full width */}
         <div className="clone-item full-width">
-          <img src="/images/mydays.png" alt="mydays" />
+     <img src={process.env.PUBLIC_URL + "/images/mydays.png"} alt="mydays" />
           <div className="clone-meta">
             <h3 className="meta-title">MY DAYS</h3>
             <ul className="meta-links">

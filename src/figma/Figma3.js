@@ -12,10 +12,11 @@ const Figma3 = () => {
                 <div className="form">
                     <h2>DESIGN SYSTEM</h2>
                     <img
-                        src="/images/figma3.png"
-                        alt="end3"
+                        src={process.env.PUBLIC_URL + "/images/figma3.png"}
+                        alt="figma3"
                         className="project-image"
                     />
+
                     <ul className="arrow-container">
                         <li>
                             <div className="bottom-arrow" onClick={goTOFigma4}>

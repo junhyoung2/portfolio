@@ -12,11 +12,12 @@ const Shopping2 = () => {
             <div className="content-container">
                 <div className="form">
                     <h2>Ririm</h2>
-                    <img
-                        src="/images/shopping2.png"
-                        alt="shopping2"
-                        className="project-image"
-                    />
+                   <img
+    src={process.env.PUBLIC_URL + "/images/shopping2.png"}
+    alt="shopping2"
+    className="project-image"
+/>
+
                     <div className="info-section">
                         <ul>
                             <li>

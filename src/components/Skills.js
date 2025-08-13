@@ -47,7 +47,7 @@ const Skills = () => {
       <ul className="skills-img">
         <li>
           <div className="skill-icon-box">
-            <img src="/images/photoshop.png" alt="photoshop" />
+            <img src={process.env.PUBLIC_URL + "/images/photoshop.png"} alt="photoshop" />
           </div>
           <div className="skill-text-box">
             <span>PhotoShop</span>
@@ -55,15 +55,14 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/Illestrator.png" alt="Illestrator" />
-          </div>
+<img src={process.env.PUBLIC_URL + "/images/Illestrator.png"} alt="Illestrator" />          </div>
           <div className="skill-text-box">
             <span>Illestrator</span>
           </div>
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/figma.png" alt="figma" />
+       <img src={process.env.PUBLIC_URL + "/images/figma.png"} alt="figma" />
           </div>
           <div className="skill-text-box">
             <span>Figma</span>
@@ -71,7 +70,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/html.png" alt="html" />
+     <img src={process.env.PUBLIC_URL + "/images/html.png"} alt="html" />
           </div>
           <div className="skill-text-box">
             <span>HTML5</span>
@@ -79,7 +78,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/css.png" alt="css" />
+    <img src={process.env.PUBLIC_URL + "/images/css.png"} alt="css" />
           </div>
           <div className="skill-text-box">
             <span>CSS3</span>
@@ -87,7 +86,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/javascript.png" alt="javascript" />
+          <img src={process.env.PUBLIC_URL + "/images/javascript.png"} alt="javascript" />
           </div>
           <div className="skill-text-box">
             <span>JavaScript ES6</span>
@@ -95,7 +94,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/react.png" alt="react" />
+         <img src={process.env.PUBLIC_URL + "/images/react.png"} alt="react" />
           </div>
           <div className="skill-text-box">
             <span>React</span>
@@ -103,7 +102,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/git.png" alt="git" />
+       <img src={process.env.PUBLIC_URL + "/images/git.png"} alt="git" />
           </div>
           <div className="skill-text-box">
             <span>Git</span>
@@ -111,7 +110,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/github.png" alt="github" />
+           <img src={process.env.PUBLIC_URL + "/images/github.png"} alt="github" />
           </div>
           <div className="skill-text-box">
             <span>GitHub</span>
@@ -119,7 +118,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/scss.png" alt="scss" />
+       <img src={process.env.PUBLIC_URL + "/images/scss.png"} alt="scss" />
           </div>
           <div className="skill-text-box">
             <span>SCSS</span>
@@ -127,7 +126,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/jira.png" alt="jira" />
+        <img src={process.env.PUBLIC_URL + "/images/jira.png"} alt="jira" />
           </div>
           <div className="skill-text-box">
             <span>Jira</span>
@@ -135,7 +134,7 @@ const Skills = () => {
         </li>
         <li>
           <div className="skill-icon-box">
-            <img src="/images/supabase.png" alt="supabase" />
+<img src={process.env.PUBLIC_URL + "/images/supabase.png"} alt="supabase" />
           </div>
           <div className="skill-text-box">
             <span>SupaBase</span>

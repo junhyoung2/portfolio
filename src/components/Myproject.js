@@ -1,13 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import End from "./End";
-import Publishing from "./Publishing";
-import Clonecoding1 from "../clonecoding/Clonecoding1";
-import Shopping1 from "../shopping/Shopping1";
-import Tower1 from "../towerpick/Tower1";
-import End1 from "../endtalk/End1";
-import Quiz1 from "../Quiz/Quiz1";
-import Blog1 from "../blog/Blog1";
-import Figma1 from "../figma/Figma1";
 import { IoIosArrowDropdown } from "react-icons/io";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";

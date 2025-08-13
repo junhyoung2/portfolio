@@ -13,10 +13,11 @@ const End3 = () => {
                 <div className="form">
                     <h2>WIRE FRAME</h2>
                     <img
-                        src="/images/endtalk3.png"
+                        src={process.env.PUBLIC_URL + "/images/endtalk3.png"}
                         alt="end3"
                         className="project-image"
                     />
+
                     <ul className="arrow-container">
                         <li>
                             <div className="bottom-arrow" onClick={goTOEnd4}>

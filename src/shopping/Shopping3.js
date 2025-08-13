@@ -13,7 +13,7 @@ const Shopping3 = () => {
                 <div className="form">
                     <h2>Ririm</h2>
                     <img
-                        src="/images/shopping3.png"
+                        src={process.env.PUBLIC_URL + "/images/shopping3.png"}
                         alt="shopping3"
                         className="project-image"
                     />

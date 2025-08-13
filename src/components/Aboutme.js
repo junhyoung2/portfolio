@@ -61,7 +61,7 @@ const Aboutme = () => {
     <section id="aboutme" ref={aboutRef}>
       <h2>ABOUT ME</h2>
       <div className="content">
-        <img src="/images/myprofile.png" alt="profile" />
+        <img src={process.env.PUBLIC_URL + "/images/myprofile.png"} alt="profile" />
         <ul className="info">
           <li>
             <IoPerson />

@@ -7,10 +7,10 @@ const Clonecoding3 = () => {
                     <h3 className="project-title">NETFLIX</h3>
                     <div className="img-container">
                         <img
-                            src="/images/netflixpc.png"
-                            alt="netflix_pc"
-                            className="project-img"
-                        />
+        src={process.env.PUBLIC_URL + "/images/netflixpc.png"}
+        alt="netflix_pc"
+        className="project-img"
+    />
                     </div>
                     <p className="desc">
                         TMDB API를 활용해 받아온 영화 데이터를 슬라이드 형태로

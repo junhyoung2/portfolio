@@ -10,10 +10,10 @@ const Figma2 = () => {
     return (
         <div id="main-project">
             <div className="content-container">
-                <div className="form">  
+                <div className="form">
                     <h2>OVERVIEW</h2>
                     <img
-                        src="/images/figma2.png"
+                        src={process.env.PUBLIC_URL + "/images/figma2.png"}
                         alt="figma2"
                         className="project-image"
                     />
@@ -21,7 +21,9 @@ const Figma2 = () => {
                     <div className="info-section">
                         <ul>
                             <li>
-                                <span>프로젝트 목표 : <br/></span>
+                                <span>
+                                    프로젝트 목표 : <br />
+                                </span>
                                 당구장, 노래방, 피시방 등 다양한 놀이시설 정보를
                                 한눈에 확인할 수 있는 플랫폼을 기획하였으며,
                                 사용자 위치를 기반으로 주변 시설을 탐색할 수
@@ -31,7 +33,9 @@ const Figma2 = () => {
                                 있도록 구조를 설계하였습니다.
                             </li>
                             <li>
-                                <span>내가 맡은 역할 : <br/></span>
+                                <span>
+                                    내가 맡은 역할 : <br />
+                                </span>
                                 기획부터 디자인까지 모든 과정을 담당했으며, 특히
                                 화면 간 흐름 설계와 컴포넌트 단위 ui 구성에
                                 집중하였습니다.
@@ -42,8 +46,9 @@ const Figma2 = () => {
                                 구성하였습니다.
                             </li>
                             <li>
-                                <span>기능: <br/></span>
-                               
+                                <span>
+                                    기능: <br />
+                                </span>
                                 위치 기반 검색: 사용자의 현재 위치를 감지하여
                                 주변 놀이시설을 검색 <br />
                                 카테고리 필터: 놀이공원, 키즈카페, VR방,

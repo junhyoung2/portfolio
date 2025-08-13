@@ -13,19 +13,14 @@ const Tower4 = () => {
                 <div className="form">
                     <h2>USER FLOW</h2>
                     <img
-                        src="/images/tower4.png"
-                        alt="tower2"
+                        src={process.env.PUBLIC_URL + "/images/tower4.png"}
+                        alt="tower4"
                         className="project-image"
                     />
-                    
-                   
-              
- <ul className="arrow-container">
+
+                    <ul className="arrow-container">
                         <li>
-                            <div
-                                className="bottom-arrow"
-                                onClick={goToTower5}
-                            >
+                            <div className="bottom-arrow" onClick={goToTower5}>
                                 <IoIosArrowDropright />
                             </div>
                         </li>

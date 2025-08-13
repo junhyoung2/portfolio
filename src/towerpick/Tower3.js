@@ -13,7 +13,7 @@ const Tower3 = () => {
                 <div className="form">
                     <h2>DESIGN SYSTEM</h2>
                     <img
-                        src="/images/tower3.png"
+                        src={process.env.PUBLIC_URL + "/images/tower3.png"}
                         alt="tower3"
                         className="project-image"
                     />

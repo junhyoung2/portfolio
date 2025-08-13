@@ -11,10 +11,11 @@ const End1 = () => {
                 <div className="form">
                     <h2>EndTalk</h2>
                     <img
-                        src="/images/endtalk1.png"
+                        src={process.env.PUBLIC_URL + "/images/endtalk1.png"}
                         alt="endtalk1"
                         className="project-image-end"
                     />
+
                     <p className="description">
                         끝말잇기 형식의 단어 게임 웹앱으로, 단어 입력 및 게임
                         흐름을 구성한 개인 프로젝트입니다. 현재는 사용자가

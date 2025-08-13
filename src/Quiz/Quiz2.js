@@ -13,7 +13,7 @@ const Quiz2 = () => {
                 <div className="form">
                     <h2>OVERVIEW</h2>
                     <img
-                        src="/images/quiz2.png"
+                        src={process.env.PUBLIC_URL + "/images/quiz2.png"}
                         alt="quiz2"
                         className="project-image-end"
                     />
