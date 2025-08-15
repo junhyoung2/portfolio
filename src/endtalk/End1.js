@@ -9,23 +9,19 @@ const End1 = () => {
         <div id="main-project">
             <div className="content-container">
                 <div className="form">
-                    <h2>EndTalk</h2>
+                    <h2>endtalk</h2>
                     <img
                         src={process.env.PUBLIC_URL + "/images/endtalk1.png"}
-                        alt="endtalk1"
+                        alt="endword1"
                         className="project-image-end"
                     />
 
                     <p className="description">
-                        끝말잇기 형식의 단어 게임 웹앱으로, 단어 입력 및 게임
-                        흐름을 구성한 개인 프로젝트입니다. 현재는 사용자가
-                        스스로 단어를 주고받는 형태로 구현되어 있으며, 추후
-                        우리말샘 OpenAPI를 연동해 실제 존재하는 단어만 사용
-                        가능하도록 완성도를 높일 예정입니다.
+                       끝말잇기 형식의 단어 게임 웹앱으로, 단어 입력 및 게임 흐름을 구성한 개인 프로젝트입니다. 우리말샘 OpenAPI를 연동해 실제 존재하는 단어만 사용 가능하도록 구현하여 게임의 완성도와 정확성을 높였습니다.
                     </p>
                     <div className="info-section">
                         <p className="info-title">제작에 사용된 스킬 :</p>
-                        <p>Figma, HTML, CSS, JavaScript, GIT/GitHub</p>
+                        <p>Figma, SCSS, React, GIT/GitHub</p>
                     </div>
                     <div className="info-section">
                         <p className="info-title">프로젝트 개요</p>
@@ -73,7 +69,7 @@ const End1 = () => {
                         </li>
                         <li>
                             <a
-                                href="https://github.com/junhyoung2/junhyoung2.github.io/tree/main/javascript/EndTalk"
+                                href="https://github.com/junhyoung2/endword"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -82,7 +78,7 @@ const End1 = () => {
                         </li>
                         <li>
                             <a
-                                href="https://junhyoung2.github.io/javascript/EndTalk/index1.html"
+                                href="https://junhyoung2.github.io/endword/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
