@@ -60,7 +60,7 @@ const Tower1 = () => {
                                 onClick={goToQuiz2}
                                 style={{ cursor: "pointer" }}
                             >
-                                <span>OVERVIEW</span>
+                                <span>OVERVIEW ＞</span>
                             </div>
                         </li>
                         <li>
@@ -69,7 +69,7 @@ const Tower1 = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span>GITHUB</span>
+                                <span>GITHUB ＞</span>
                             </a>
                         </li>
                         <li>
@@ -78,7 +78,7 @@ const Tower1 = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span>SITE URL</span>
+                                <span>SITE URL ＞</span>
                             </a>
                         </li>
                     </ul>

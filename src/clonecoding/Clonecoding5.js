@@ -63,7 +63,7 @@ const Clonecoding5 = () => {
                             <li>
                                 <span>배포방식 :</span> GitHub
                             </li>
-                            <li>
+                       <li className="highlight-link">
                                 <a
                                     href="https://github.com/junhyoung2/myday"
                                     target="_blank"
@@ -72,7 +72,7 @@ const Clonecoding5 = () => {
                                     GITHUB 바로가기 &gt;
                                 </a>
                             </li>
-                            <li>
+                    <li className="highlight-link">
                                 <a
                                     href="https://junhyoung2.github.io/myday/"
                                     target="_blank"

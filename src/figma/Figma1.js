@@ -9,7 +9,7 @@ const Figma1 = () => {
         <div id="main-project">
             <div className="content-container">
                 <div className="form">
-                    <h2>EndTalk</h2>
+                    <h2>Play Map</h2>
                     <img
                         src={process.env.PUBLIC_URL + "/images/figma1.png"}
                         alt="figma1"
@@ -57,7 +57,7 @@ const Figma1 = () => {
                                 onClick={goToFigma2}
                                 style={{ cursor: "pointer" }}
                             >
-                                <span>OVERVIEW</span>
+                                <span>OVERVIEW ＞</span>
                             </div>
                         </li>
                         <li>
@@ -66,7 +66,7 @@ const Figma1 = () => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span>Figma</span>
+                                <span>Figma ＞</span>
                             </a>
                         </li>
                     </ul>
