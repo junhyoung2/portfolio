@@ -23,14 +23,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
 
-.clone-item img {
-  max-width: 330px;
-  max-height: 430px;
-  display: block;
-  margin-bottom: 1rem;
-  object-fit: cover;
+  // hover 효과
+  img {
+    max-width: 330px;
+    max-height: 430px;
+    display: block;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+  }
 }
 
 .clone-meta {
@@ -56,6 +63,15 @@
   padding: 5px 0;
   font-size: 16px;
   color: #505050;
+
+  // hover 효과
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    color: #000;
+  }
 }
 
 .clone-meta .meta-links li span {
@@ -72,6 +88,12 @@
   max-width: 930px;
   max-height: 530px;
   width: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  }
 }
 
 // 반응형 처리
@@ -127,12 +149,12 @@
     justify-items: center;
   }
   .clone-item {
-    align-items: center;     // 왼쪽 정렬
+    align-items: center;   
     text-align: center;
     width: 100%;
   }
   .clone-item img {
-    max-width: 140vw;            // 이미지 더 크게
+    max-width: 140vw;            
     max-height: 360px;
   }
   .full-width img {
@@ -148,7 +170,7 @@
   }
   .clone-meta .meta-links li {
     font-size: 13px;
-    justify-content:space-around;
+    justify-content: space-around;
     gap: 12px;
   }
 }

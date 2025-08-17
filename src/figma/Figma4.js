@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Figma4 = () => {
     const navigate = useNavigate();
     const goFigma5 = () => {
-        navigate("/#myproject");
+        navigate("/#cover");
     };
 
     return (

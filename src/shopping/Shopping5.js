@@ -4,7 +4,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 const Shopping5 = () => {
     const navigate = useNavigate();
     const goToShopping6 = () => {
-        navigate("/#myproject");
+       navigate("/#cover");
     };
 
     return (

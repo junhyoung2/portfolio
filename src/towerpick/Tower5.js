@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Tower5 = () => {
     const navigate = useNavigate();
     const goToTower6 = () => {
-        navigate("/myproject");
+         navigate("/#cover");
     };
 
     return (

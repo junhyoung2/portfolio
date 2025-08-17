@@ -46,7 +46,7 @@ const Tower1 = () => {
                                 <span>제작기간 :</span> 07.21 ~ 08.01 (10D)
                             </li>
                             <li>
-                                <span>제작 참여율 :</span> 80%(6인 팀 프로젝트)
+                                <span>제작 참여율 :</span> 80%(4인 팀 프로젝트)
                             </li>
                             <li>
                                 <span>배포방식 :</span> GitHub

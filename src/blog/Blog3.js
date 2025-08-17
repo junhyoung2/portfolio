@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Quiz3 = () => {
     const navigate = useNavigate();
     const goToBlog4 = () => {
-        navigate("/#myproject");
+      navigate("/#cover");
     };
 
     return (
