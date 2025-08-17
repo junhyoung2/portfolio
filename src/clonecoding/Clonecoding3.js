@@ -20,7 +20,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> <br />
+                                <span>- 제작에 사용된 스킬 : </span> 
                                 <br />
                                 React/Router, SCSS, GIT/GitHub
                             </li>
@@ -29,7 +29,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> <br />
+                                <span>- 이 프로젝트에서 배운 점 :</span> 
                                 <br />
                                 외부 API에서 데이터를 받아와 컴포넌트로 전달하고
                                 화면에 출력하는 전체 흐름을 직접 경험하며 데이터
@@ -40,7 +40,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요 : </span> <br />
+                                <span> 프로젝트 개요  </span> 
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Netflix의 메인 페이지를 분석하여 전체적인 구조와
@@ -67,7 +67,7 @@ const Clonecoding3 = () => {
                                 <br /> slick-carousel
                             </li>
                             <li>
-                                <span>제작기간 :</span> : 06.23 ~ 06.26 (4D)
+                                <span>제작기간 :</span>  06.23 ~ 06.26 (4D)
                             </li>
                             <li>
                                 <span>제작 참여율 :</span> 100%(개인프로젝트)

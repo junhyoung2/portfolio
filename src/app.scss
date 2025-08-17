@@ -11,35 +11,8 @@
 @import "./styles/detail/clonecoding25.scss";
 @import "./styles/detail/main-project.scss";
 
-// 반응형 믹스인 추가
-@mixin mobile {
-  @media (max-width: 480px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (max-width: 1440px) {
-    @content;
-  }
-}
 
 #app {
   width: 100%;
   margin: 0 auto;
-  @include desktop {
-    max-width: 1440px;
-  }
-  @include tablet {
-    max-width: 1024px;
-  }
-  @include mobile {
-    max-width: 480px;
-  }
 }

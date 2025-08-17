@@ -4,6 +4,7 @@ import Cover from "./Cover";
 import Index from "./Index";
 import Myproject from "./Myproject";
 import Skills from "./Skills";
+import End from "./End";
 
 
 const HomePage = () => {
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Aboutme />
       <Skills />
       <Myproject />
+      <End />
     </div>
   );
 };

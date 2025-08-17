@@ -1,291 +1,250 @@
 #main-project {
     background-color: #f0eeeb;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
-}
+    padding: 5rem 10rem;
 
-.content-container {
-    width: 100%;
-    padding: 40px;
-    margin-top: 40px;
-}
-
-.form {
-    h2 {
-        @include font-gray50();
-        text-align: center;
-        margin-bottom: 30px;
-    }
-}
-
-// PC용 이미지
-.project-image {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-// 모바일용 이미지
-.project-image-mobile {
-    width: 320px;
-    height: 640px;
-    object-fit: cover;
-    margin: 0 auto 30px auto;
-    border-radius: 20px;
-    display: block;
-}
-
-//타워픽 (특수 모바일캡처)
-.project-image-tower {
-    width: 380px;
-    height: 860px;
-    object-fit: cover;
-    margin: 0 auto 30px auto;
-    border-radius: 20px;
-    display: block;
-}
-
-//endtalk (특수 모바일캡처)
-.project-image-end {
-    width: 470px;
-    height: 860px;
-    object-fit: cover;
-    margin: 0 auto 30px auto;
-    border-radius: 20px;
-    display: block;
-}
-
-// 공통 이미지 확대 효과
-.project-image,
-.project-image-mobile,
-.project-image-tower,
-.project-image-end {
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-
-  &:hover {
-    transform: scale(1.05) translateY(-3px);
-  }
-
-  &:active {
-    transform: scale(1) translateY(0);
-  }
-}
-
-.description {
-    @include font-gray24();
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-.info-section {
-    margin-bottom: 25px;
-
-    .info-title {
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 10px;
+    .content-container {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0; // 기본 패딩은 필요에 따라 반응형에서 조절
     }
 
-    p,
-    li {
-        @include font-gray24();
-        color: #666;
-        line-height: 1.8;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    li span {
-        font-weight: bold;
-        color: #444;
-    }
-}
-
-.meta-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 40px;
-
-    li {
-        margin-bottom: 15px;
-
-        a,
-        .nav-link {
-            display: flex;
-            align-items: center;
-            text-decoration: underline;
-            color: #333;
-            font-weight: bold;
-            transition: transform 0.25s ease, color 0.25s ease;
-
-            span {
-                font-size: 1.5rem;
-                transition: transform 0.25s ease; 
-            }
-
-            &:hover {
-                color: #f97316; 
-                transform: scale(1.05); 
-
-                span {
-                    transform: scale(1.2); 
-                }
-            }
-
-            &:active {
-                transform: scale(0.95);
-            }
+    .form {
+        h2 {
+            @include font-gray50();
+            text-align: center;
+            margin-bottom: 30px;
         }
     }
-}
 
-
-.arrow-container {
-    margin-top: 50px;
-    display: flex;
-    margin-bottom: 2rem;
-    align-items: center;
-    cursor: pointer;
-    justify-content: flex-end;
-
-    .bottom-arrow {
-        @include btn-style();
-        background: none;
-        color: #f97316;
-        font-size: 5rem;
-        transition: transform 0.25s ease, color 0.25s ease;
+    // 이미지 공통 스타일
+    .project-image,
+    .project-image-mobile,
+    .project-image-tower,
+    .project-image-end {
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto 30px auto;
+        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 
         &:hover {
-            transform: scale(1.15); 
-            color: #ea580c; 
+            transform: scale(1.05) translateY(-3px);
         }
 
         &:active {
-            transform: scale(1.5); 
+            transform: scale(1) translateY(0);
         }
     }
-}
 
-// 반응형 처리
-@include desktop {
-    .content-container {
-        padding: 24px;
-        margin-top: 24px;
-    }
+    // 개별 이미지 크기
     .project-image {
-        max-width: 600px;
-        margin-bottom: 20px;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
     }
+
     .project-image-mobile {
-        width: 220px;
-        height: 420px;
-        margin-bottom: 20px;
+        width: 320px;
+        height: 640px;
+        object-fit: cover;
     }
-    .project-image-tower,
+
+    .project-image-tower {
+        width: 380px;
+        height: 860px;
+        object-fit: cover;
+    }
+
     .project-image-end {
-        width: 260px;
-        height: 600px;
+        width: 470px;
+        height: 860px;
+        object-fit: cover;
+    }
+
+    .description {
+        @include font-gray24();
+        text-align: left;
         margin-bottom: 30px;
+        line-height: 39px;
     }
-    .form h2 {
-        font-size: 2rem;
-    }
-    .description,
-    .info-section p,
-    .info-section li {
-        font-size: 15px;
-    }
-    .arrow-container .bottom-arrow {
-        font-size: 3rem;
-    }
-}
 
-@include tablet {
-    .content-container {
-        padding: 8px;
-        margin-top: 10px;
-    }
-    .project-image {
-        max-width: 98vw;
-        margin-bottom: 12px;
-    }
-    .project-image-mobile {
-        width: 160px;
-        height: 320px;
-        margin-bottom: 12px;
-    }
-    .project-image-tower,
-    .project-image-end {
-        width: 120px;
-        height: 260px;
-        margin-bottom: 14px;
-    }
-    .form h2 {
-        font-size: 1.2rem;
-    }
-    .description,
-    .info-section p,
-    .info-section li {
-        font-size: 13px;
-    }
-    .arrow-container {
-        margin-top: 18px;
-        .bottom-arrow {
-            font-size: 2rem;
+    .info-section {
+        margin-bottom: 25px;
+
+        .info-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p,
+        li {
+            @include font-gray24();
+            color: #666;
+
+            line-height: 39px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li span {
+            font-weight: bold;
+            color: #444;
         }
     }
-}
 
-@include mobile {
-    #main-project {
-        max-height: none;
+    .meta-links {
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 15px;
+
+            a,
+            .nav-link {
+                display: flex;
+                align-items: center;
+                text-decoration: underline;
+                color: #333;
+                font-weight: bold;
+                transition: transform 0.25s ease, color 0.25s ease;
+
+                span {
+                    font-size: 1.5rem;
+                    transition: transform 0.25s ease;
+                }
+
+                &:hover {
+                    color: #f97316;
+                    transform: scale(1.05);
+
+                    span {
+                        transform: scale(1.2);
+                    }
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
     }
-    .content-container {
-        padding: 2px;
-        margin-top: 2px;
-    }
-    .project-image {
-        max-width: 180vw;
-        margin-bottom: 6px;
-        border-radius: 10px;
-    }
-    .project-image-mobile {
-        width: 90vw;
-        height: 100%;
-        margin-bottom: 6px;
-        border-radius: 10px;
-    }
-    .project-image-tower,
-    .project-image-end {
-        width: 90vw;
-        height: 100%;
-        margin-bottom: 6px;
-        border-radius: 10px;
-    }
-    .form h2 {
-        font-size: 1rem;
-    }
-    .description,
-    .info-section p,
-    .info-section li {
-        font-size: 11px;
-    }
+
     .arrow-container {
-        margin-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+        // margin: 50px 0 2rem 0;
+        cursor: pointer;
         .bottom-arrow {
-            font-size: 1.2rem;
+            background: none;
+            color: #f97316;
+            font-size: 5rem;
+            transition: transform 0.25s ease, color 0.25s ease;
+            &:hover {
+                transform: scale(1.15);
+                color: #ea580c;
+            }
+            &:active {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    // 반응형 - 태블릿
+    @include tablet {
+        .content-container {
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        .project-image {
+            max-width: 98vw;
+            margin-bottom: 12px;
+        }
+
+        .project-image-mobile {
+            width: 160px;
+            height: 320px;
+            margin-bottom: 12px;
+        }
+
+        .project-image-tower,
+        .project-image-end {
+            width: 120px;
+            height: 260px;
+            margin-bottom: 14px;
+        }
+
+        .description,
+        .info-section p,
+        .info-section li {
+            font-size: 24px;
+        }
+
+        .arrow-container {
+            margin-top: 18px;
+            justify-content: flex-end;
+
+            .bottom-arrow {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    // 반응형 - 모바일
+    @include mobile {
+        padding: 1rem;
+
+        .content-container {
+            padding: 0 8px;
+            margin-top: 12px;
+            justify-content: flex-end;
+        }
+
+        .project-image,
+        .project-image-mobile,
+        .project-image-tower,
+        .project-image-end {
+            width: 100%;
+            height: auto;
+            max-width: 480px;
+            margin: 0 auto 12px auto;
+            border-radius: 10px;
+        }
+
+        .form h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .description,
+        .info-section p,
+        .info-section li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .arrow-container {
+            margin-top: 18px;
+            justify-content: flex-end;
+            .bottom-arrow {
+                font-size: 2rem;
+            }
+        }
+        .meta-links {
+            li {
+                a span,
+                .nav-link span {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }

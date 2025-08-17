@@ -1,139 +1,108 @@
 #publishing {
     background-color: $blk-background;
-    color: #ffffff;
-    padding: 20px;
+    color: #fff;
+    padding: 10rem 5rem;
     text-align: center;
-}
-
-#publishing h2 {
-    @include font-white50();
-    margin-bottom: 70px;
-}
-
-#publishing .form h2 {
-    color: #f97316;
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-#publishing p {
-    @include font-white24();
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
-#publishing p ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#publishing p a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#publishing p a:hover {
-    text-decoration: underline;
-}
-
-#publishing img {
-    justify-content: center;
-    align-items: center;
-    width: 960px;
-    height: 560px;
-    display: block;
-    margin: 40px auto;
-}
-
-.form {
-    padding: 20px;
-    max-width: 980px;
-    margin: 0 auto;
-    border-bottom: 1px solid #505050;
-}
-
-// 반응형 처리
-@include desktop {
-    #publishing {
-        padding: 16px;
-    }
-    #publishing h2 {
-        font-size: 40px;
-        margin-bottom: 40px;
-    }
-    #publishing .form h2 {
-        font-size: 36px;
-    }
-    #publishing img {
-        width: 700px;
-        height: 400px;
-        margin: 24px auto;
+    h2 {
+        @include font-white50();
+        margin-bottom: 70px;
     }
     .form {
-        padding: 16px;
-        max-width: 700px;
-    }
-    #publishing p {
-        font-size: 16px;
+        padding: 20px;
+        max-width: 980px;
+        margin: 0 auto 40px;
+        border-bottom: 1px solid #505050;
+
+        h2 {
+            color: #f97316;
+            font-size: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 40px auto;
+            width: 960px;
+            height: 560px;
+            object-fit: cover;
+        }
+
+        p,
+        ul {
+            @include font-white24();
+            text-align: left;
+            margin: 20px auto;
+            font-size: 22px;
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: #f97316;
+                    transition: color 0.3s;                    
+                }
+                
+            }
+        }
     }
 }
 
+// 데스크탑 = 태블릿
 @include tablet {
     #publishing {
-        padding: 8px;
-    }
-    #publishing h2 {
-        font-size: 28px;
-        margin-bottom: 24px;
-    }
-    #publishing .form h2 {
-        font-size: 22px;
-    }
-    #publishing img {
-        width: 98vw;
-        height: auto;
-        max-width: 420px;
-        max-height: 260px;
-        margin: 16px auto;
-    }
-    .form {
-        padding: 8px;
-        max-width: 98vw;
-    }
-    #publishing p {
-        font-size: 13px;
+        h2 {
+            font-size: 50px;
+            margin-bottom: 70px;
+        }
+        .form {
+            h2 {
+                font-size: 50px;
+            }
+            img {
+                width: 840px;
+                height: 560px;
+                margin: 40px auto;
+            }
+            p {
+                font-size: 22px;
+            }
+            max-width: 980px;
+        }
     }
 }
 
+// 모바일 최적화
 @include mobile {
     #publishing {
-        padding: 4px;
-    }
-    #publishing h2 {
-        font-size: 18px;
-        margin-bottom: 12px;
-    }
-    #publishing .form h2 {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-    #publishing img {
-        width: 98vw;
-        height: auto;
-        max-width: 98vw;
-        max-height: 140px;
-        margin: 8px auto;
-    }
-    .form {
-        padding: 4px;
-        max-width: 100vw;
-    }
-    #publishing p {
-        font-size: 10px;
-        margin: 8px auto;
+        padding: 8px;
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+
+        .form {
+            padding: 8px;
+            max-width: 100vw;
+
+            h2 {
+                font-size: 22px;
+                margin-top: 10px;
+            }
+
+            img {
+                width: 90vw;
+                height: auto;
+                max-height: 140px;
+                margin: 8px auto;
+            }
+
+            p,ul {
+                font-size: 14px;
+                margin: 8px auto;
+            }
+        }
     }
 }

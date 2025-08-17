@@ -19,7 +19,7 @@ const Clonecoding2 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> <br />
+                                <span>- 제작에 사용된 스킬 : </span>
                                 <br />
                                 HTML, CSS
                             </li>
@@ -28,7 +28,7 @@ const Clonecoding2 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> <br />
+                                <span>- 이 프로젝트에서 배운 점 :</span> 
                                 <br />
                                 미디어 쿼리를 활용해 디바이스 크기에 따라 배경
                                 이미지, 네비게이션, 비디오 비율을 유동적으로
@@ -39,7 +39,7 @@ const Clonecoding2 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요 : </span> <br />
+                                <span> 프로젝트 개요  </span> 
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Figma를 통해 Tesla 공식 홈페이지의 레이아웃

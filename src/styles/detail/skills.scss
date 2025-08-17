@@ -1,150 +1,109 @@
 #skills {
-  background-color: $blk-background; 
-  color: #fff;
-  height: 100%;
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  h2 {
-    margin-bottom: 134px; 
-    @include font-white50();
-  }
-
-  ul.skills-img {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-  }
-
-  ul.skills-img li {
+    background-color: $blk-background;
+    color: #fff;
+    padding: 10rem 5rem;
     display: flex;
     flex-direction: column;
-    width: 261px;
-    height: 320px;
-    border-radius: 8px; 
-    overflow: hidden; 
-    transition: all 0.3s ease; 
-    cursor: pointer;
-
-    &:hover {
-      transform: translateY(-5px); 
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-    }
-  }
-
-  .skill-icon-box {
-    flex: 1;
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    height: 220px;
-
-    img {
-      max-width: 80%;
-      max-height: 80%;
-      object-fit: contain;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .skill-text-box {
-    background-color: #212121;
-    height: 80px; 
-    display: flex;
     align-items: center;
     justify-content: center;
 
-    span {
-      @include font-gray24();
-      font-size: 1.5rem; 
-    }
-  }
-
-  // 반응형 처리
-  @include desktop {
-    padding: 3rem 1.5rem;
     h2 {
-      font-size: 40px;
-      margin-bottom: 70px;
+        margin-bottom: 134px;
+        @include font-white50();
     }
-    ul.skills-img {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    ul.skills-img li {
-      width: 180px;
-      height: 220px;
-    }
-    .skill-icon-box {
-      height: 120px;
-      padding: 12px;
-    }
-    .skill-text-box {
-      height: 50px;
-      span {
-        font-size: 1.1rem;
-      }
-    }
-  }
 
-  @include tablet {
-    padding: 2rem 1rem;
-    h2 {
-      font-size: 28px;
-      margin-bottom: 40px;
-    }
     ul.skills-img {
-      grid-template-columns: repeat(3, 1fr); // 3*n 배열 유지
-      gap: 12px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
-    ul.skills-img li {
-      width: 120px;
-      height: 150px;
-    }
-    .skill-icon-box {
-      height: 70px;
-      padding: 8px;
-    }
-    .skill-text-box {
-      height: 32px;
-      span {
-        font-size: 0.9rem;
-      }
-    }
-  }
 
-  @include mobile {
-    padding: 1rem 0.5rem;
-    h2 {
-      font-size: 18px;
-      margin-bottom: 18px;
-    }
-    ul.skills-img {
-      grid-template-columns: repeat(3, 1fr); // 3*n 배열 유지
-      gap: 8px;
-    }
     ul.skills-img li {
-      width: 90px;
-      height: 80px;
+        display: flex;
+        flex-direction: column;
+        width: 261px;
+        height: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
     }
+
     .skill-icon-box {
-      height: 40px;
-      padding: 4px;
+        flex: 1;
+        background-color: #1a1a1a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: 220px;
+
+        img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
     }
+
     .skill-text-box {
-      height: 20px;
-      span {
-        font-size: 0.7rem;
-      }
+        background-color: #212121;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            @include font-gray24();
+            font-size: 1.5rem;
+        }
     }
-  }
+
+    // 반응형 처리
+    @include tablet {
+        padding: 10rem 5rem;
+        h2 {
+            margin-bottom: 134px;
+            @include font-white50();
+        }
+        ul.skills-img {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    }
+
+    @include mobile {
+        padding: 5.5rem 1rem;
+        h2 {
+            font-size: 30px;
+            margin-bottom: 28px;
+        }
+        ul.skills-img {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        ul.skills-img li {
+            width: 120px;
+            height: 100px;
+        }
+        .skill-icon-box {
+            height: 60px;
+            padding: 6px;
+        }
+        .skill-text-box {
+            height: 28px;
+            span {
+                font-size: 0.9rem;
+            }
+        }
+    }
 }

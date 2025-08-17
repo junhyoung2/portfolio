@@ -1,62 +1,62 @@
 #index {
-    background-color: $blk-background;
-    color: #fff;
-    height: 100vh;
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    @include font-white50();
-    cursor: pointer;
+  background-color: $blk-background;
+  color: #fff;
+  height: 100vh;
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+  @include font-white50();
+  line-height: 1.1;
+
+  h2 {
+    margin-bottom: 108px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 36px;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+//반응형
+
+  // 태블릿
+  @include tablet {
+    padding: 2rem 1rem;
 
     h2 {
-        margin-bottom: 108px;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-            margin-bottom: 36px;
-        }
-        li:last-child {
-            margin-bottom: 0;
-        }
+      font-size: 50px;
+      margin-bottom: 40px;
     }
 
-    // 반응형 처리
-    @include desktop {
-        padding: 3rem 1.5rem;
-        h2 {
-            font-size: 65px;
-            margin-bottom: 70px;
-        }
-        ul li {
-            font-size: 65px;
-            margin-bottom: 28px;
-        }
+    ul li {
+      font-size: 50px;
+      margin-bottom: 18px;
+    }
+  }
+
+  // 모바일
+  @include mobile {
+    padding: 1rem 1rem;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+      line-height: 1.4;
     }
 
-    @include tablet {
-        padding: 2rem 1rem;
-        h2 {
-            font-size: 50px;
-            margin-bottom: 40px;
-        }
-        ul li {
-            font-size: 50px;
-            margin-bottom: 18px;
-        }
+    ul li {
+      font-size: 34px;
+      margin-bottom: 10px;
+      line-height: 1.4;
     }
-
-    @include mobile {
-        padding: 1rem 1rem;
-        h2 {
-            font-size: 25px;
-            margin-bottom: 15px;
-        }
-        ul li {
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-    }
+  }
 }

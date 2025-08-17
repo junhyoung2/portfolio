@@ -46,40 +46,40 @@ const App = () => {
        
         <Route path="/" element={<HomePage />} />
 
-        {/* 쇼핑 페이지 라우트 */}
+        {/* 쇼핑 페이지 */}
         <Route path="/shopping1" element={<Shopping1 />} />
         <Route path="/shopping2" element={<Shopping2 />} />
         <Route path="/shopping3" element={<Shopping3 />} />
         <Route path="/shopping4" element={<Shopping4 />} />
         <Route path="/shopping5" element={<Shopping5 />} />
 
-        {/* 타워픽 프로젝트 라우트 */}
+        {/* 타워픽 프로젝트 */}
         <Route path="/tower1" element={<Tower1 />} />
         <Route path="/tower2" element={<Tower2 />} />
         <Route path="/tower3" element={<Tower3 />} />
         <Route path="/tower4" element={<Tower4 />} />
         <Route path="/tower5" element={<Tower5 />} />       
-        {/* 끝말이 프로젝트 라우트 */}
+        {/* 끝말이 프로젝트*/}
         
         <Route path="/endtalk1" element={<End1 />} />
         <Route path="/endtalk2" element={<End2 />} />
         <Route path="/endtalk3" element={<End3 />} />
         <Route path="/endtalk4" element={<End4 />} />
-         {/* 진격거 프로젝트 라우트 */}
+         {/* 진격거 프로젝트 */}
         <Route path="/quiz1" element={<Quiz1 />} />
         <Route path="/quiz2" element={<Quiz2 />} />
         <Route path="/quiz3" element={<Quiz3 />} />
-        {/* 블로그 프로젝트 라우트 */}
+        {/* 블로그 프로젝트*/}
         <Route path="/blog1" element={<Blog1 />} />
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/blog3" element={<Blog3 />} />
-         {/* 피그마 프로젝트 라우트 */}
+         {/* 피그마 프로젝트*/}
         <Route path="/figma1" element={<Figma1 />} />
         <Route path="/figma2" element={<Figma2 />} />
         <Route path="/figma3" element={<Figma3 />} />
         <Route path="/figma4" element={<Figma4 />} />
 
-        {/* 클론 코딩 페이지 라우트 */}
+        {/* 클론 코딩 페이지 */}
         <Route path="/clone-coding" element={<Clonecoding1 />} />
         <Route path="/clone-coding/tesla" element={<Clonecoding2 />} />
         <Route path="/clone-coding/netflix" element={<Clonecoding3 />} />
@@ -88,7 +88,7 @@ const App = () => {
 
         <Route path="/publishing" element={<Publishing />} />
 
-        {/* Myproject 페이지 라우트 추가 */}
+        {/* Myproject 페이지 */}
         <Route path="/myproject" element={<Myproject />} />
       </Routes>
     </HashRouter>

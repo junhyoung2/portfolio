@@ -61,8 +61,8 @@ const Cover = () => {
           제 웹 포트폴리오를 방문해 주셔서 감사합니다.
         </p>
       </div>
-      <div className="arrow-container" onClick={handleArrowClick} style={{ cursor: "pointer" }}>
-        <IoIosArrowDropdown className="bottom-arrow" />
+      <div className="arrow-container-1" onClick={handleArrowClick} style={{ cursor: "pointer" }}>
+        <IoIosArrowDropdown className="bottom-arrow-1" />
       </div>
     </section>
   );

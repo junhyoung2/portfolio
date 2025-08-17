@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import End from "./End";
+
 import { IoIosArrowDropdown } from "react-icons/io";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -175,14 +175,11 @@ const Myproject = () => {
                     >
                         PUBLISHING &gt;
                     </button>
-                  
                 </div>
-                  <div className="arrow-container-1" onClick={handleArrowClick}>
-                        <IoIosArrowDropdown className="bottom-arrow-1" />
-                    </div>
+                <div className="arrow-container-2" onClick={handleArrowClick}>
+                    <IoIosArrowDropdown className="bottom-arrow-2" />
+                </div>
             </div>
-
-            <End />
         </div>
     );
 };

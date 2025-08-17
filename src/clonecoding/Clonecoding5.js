@@ -19,7 +19,7 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> <br />
+                                <span>- 제작에 사용된 스킬 : </span> 
                                 <br />
                                 React/Router, SCSS, GIT/GitHub, Figma,
                                 OpenWeatherMap API 연동
@@ -29,7 +29,7 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> <br />
+                                <span>- 이 프로젝트에서 배운 점 :</span> 
                                 <br />
                                 React에서 외부 API를 연동한 뒤, 받아온 데이터를
                                 상태로 관리하고 그에 따라 UI가 동적으로 변하도록
@@ -41,10 +41,10 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요 : </span> <br />
+                                <span>프로젝트 개요 </span> 
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
-                                :Chrome 확장 프로그램인 Momentum을 참고하여
+                                Chrome 확장 프로그램인 Momentum을 참고하여
                                 전반적인 감성 UI와 구성 요소를 설계하였습니다.
                             </li>
                             <li>
@@ -55,7 +55,7 @@ const Clonecoding5 = () => {
                                 이루어지도록 설계하였습니다.
                             </li>
                             <li>
-                                <span>제작기간 :</span> : 06.17 ~ 06.19 (3D)
+                                <span>제작기간 :</span> 06.17 ~ 06.19 (3D)
                             </li>
                             <li>
                                 <span>제작 참여율 :</span> 100%(개인프로젝트)

@@ -14,6 +14,7 @@
     h2 {
       @include font-white50();
       margin: 0 0 1.5rem 0;
+      line-height: 1.1;
       &.highlight {
         color: #f97316;
         font-weight: 400;
@@ -35,13 +36,13 @@
     }
   }
 
-  .arrow-container {
+  .arrow-container-1 {
     margin-top: 100px;
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
 
-    .bottom-arrow {
+    .bottom-arrow-1 {
       @include btn-style();
       background: none;
       color: #f97316;
@@ -50,42 +51,26 @@
   }
 
   // 반응형 처리
-  @include desktop {
-    padding: 8rem 3rem;
-
-    .cover-content {
-      h2 {
-        font-size: 40px;
-        &.highlight {
-          font-size: 60px;
-        }
-      }
-      p {
-        font-size: 1.1rem;
-        max-width: 700px;
-      }
-    }
-    .arrow-container .bottom-arrow {
-      font-size: 2rem;
-    }
-  }
 
   @include tablet {
     padding: 5rem 1.5rem;
 
     .cover-content {
       h2 {
-        font-size: 32px;
+        font-size: 50px;
         &.highlight {
-          font-size: 40px;
+          font-size: 80px;
         }
       }
       p {
-        font-size: 1rem;
-        max-width: 90vw;
+        margin-top: 2rem;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 1.8;
+      max-width: 900px;
       }
     }
-    .arrow-container .bottom-arrow {
+    .arrow-container-1 .bottom-arrow-1 {
       font-size: 1.7rem;
     }
   }
@@ -94,22 +79,22 @@
     padding: 2.5rem 0.5rem;
 
     .cover-content {
-      margin-top: 1rem;
+      margin-top: 5rem;
       h2 {
-        font-size: 22px;
+        font-size: 38px;
         &.highlight {
-          font-size: 32px;
+          font-size: 46px;
         }
       }
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         max-width: 98vw;
       }
     }
-    .arrow-container {
+    .arrow-container-1 {
       margin-top: 40px;
-      .bottom-arrow {
-        font-size: 1.3rem;
+      .bottom-arrow-1 {
+        font-size: 1.1rem;
       }
     }
   }

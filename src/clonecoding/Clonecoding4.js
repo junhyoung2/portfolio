@@ -22,7 +22,7 @@ const Clonecoding4 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> <br />
+                                <span>- 제작에 사용된 스킬 : </span>
                                 <br />
                                 HTML, CSS, SCSS
                             </li>
@@ -31,7 +31,7 @@ const Clonecoding4 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> <br />
+                                <span>- 이 프로젝트에서 배운 점 :</span>
                                 <br />
                                 HTML과 SCSS만으로도 화면 크기에 따라 유동적으로
                                 변하는 구조, 정렬, 시각적 요소를 충분히 구현할
@@ -47,7 +47,7 @@ const Clonecoding4 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요 : </span> <br />
+                                <span> 프로젝트 개요 </span> 
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Figma를 참고하여 Airbnb 메인 페이지의 디자인
@@ -63,7 +63,7 @@ const Clonecoding4 = () => {
                             </li>
 
                             <li>
-                                <span>제작기간 :</span> : 04.30 (1D)
+                                <span>제작기간 :</span>  04.30 (1D)
                             </li>
                             <li>
                                 <span>제작 참여율 :</span> 100%(개인프로젝트)

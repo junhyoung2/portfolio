@@ -1,6 +1,6 @@
 #aboutme {
     background-color: #f0eeeb;
-    padding: 4rem 2rem;
+    padding: 10rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,95 +58,62 @@
         text-align: center;
     }
 
-.git-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #050505; 
-  border-radius: 20px;
-  padding: 12px 30px;
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.3s cubic-bezier(0.25,1,0.5,1),
-              background 0.3s, color 0.3s, box-shadow 0.3s;
+    .git-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #050505;
+        border-radius: 20px;
+        padding: 12px 30px;
+        cursor: pointer;
+        user-select: none;
+        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+        background 0.3s, color 0.3s, box-shadow 0.3s;
 
-  a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-  }
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
 
-  p {
-    margin-left: 12px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #f97316;
-    transition: color 0.3s;
-  }
+        p {
+            margin-left: 12px;
+            font-size: 28px;
+            font-weight: 600;
+            color: #f97316;
+            transition: color 0.3s;
+        }
 
-  .git {
-    font-size: 28px;
-    color: #f97316;
-    background: none;
-    transition: color 0.3s;
-  }
+        .git {
+            font-size: 28px;
+            color: #f97316;
+            background: none;
+            transition: color 0.3s;
+        }
 
-  &:hover {
-    transform: scale(1.1) translateY(-3px); 
-    background-color: #f97316; 
-    p, .git {
-      color: #050505; 
+        &:hover {
+            transform: scale(1.1) translateY(-3px);
+            background-color: #f97316;
+            p,
+            .git {
+                color: #050505;
+            }
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        &:active {
+            transform: scale(0.95) translateY(0);
+            box-shadow: none;
+            background-color: #f97316;
+            p,
+            .git {
+                color: #050505;
+            }
+        }
     }
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25); 
-  }
-
-  &:active {
-    transform: scale(0.95) translateY(0);
-    box-shadow: none;
-    background-color: #f97316;
-    p, .git {
-      color: #050505;
-    }
-  }
-}
-
 
     // 반응형 처리
-    @include desktop {
-        padding: 3rem 1.5rem;
-        h2 {
-            font-size: 65px;
-            margin-bottom: 40px;
-        }
-        .content {
-            gap: 24px;
-            img {
-                width: 180px;
-                height: 240px;
-            }
-            .info li {
-                font-size: 16px;
-                svg {
-                    font-size: 28px;
-                }
-            }
-        }
-        .description {
-            font-size: 18px;
-            margin-top: 30px;
-            margin-bottom: 40px;
-        }
-        .git-container {
-            padding: 10px 20px;
-            p {
-                font-size: 20px;
-            }
-            .git {
-                font-size: 22px;
-            }
-        }
-    }
 
     @include tablet {
         padding: 2rem 1rem;
@@ -159,13 +126,13 @@
             align-items: center;
             gap: 16px;
             img {
-                width: 120px;
-                height: 160px;
+                width: 270px;
+                height: 350px;
             }
             .info li {
-                font-size: 14px;
+                font-size: 18px;
                 svg {
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
         }
@@ -177,10 +144,10 @@
         .git-container {
             padding: 8px 12px;
             p {
-                font-size: 16px;
+                font-size: 28px;
             }
             .git {
-                font-size: 16px;
+                font-size: 28px;
             }
         }
     }
@@ -196,11 +163,11 @@
             align-items: center;
             gap: 8px;
             img {
-                width: 80px;
-                height: 100px;
+                width: 220px;
+                height: 280px;
             }
             .info li {
-                font-size: 11px;
+                font-size: 13px;
                 margin-bottom: 10px;
                 svg {
                     font-size: 13px;
@@ -208,17 +175,17 @@
             }
         }
         .description {
-            font-size: 11px;
+            font-size: 13px;
             margin-top: 10px;
             margin-bottom: 12px;
         }
         .git-container {
             padding: 5px 8px;
             p {
-                font-size: 11px;
+                font-size: 18px;
             }
             .git {
-                font-size: 11px;
+                font-size: 18px;
             }
         }
     }
