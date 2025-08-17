@@ -1,0 +1,76 @@
+body, html {
+  overflow-x: hidden;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background-color: #ff7f00;
+  z-index: 10;
+   position: fixed;
+   top: 0;
+    left: 0;
+    width: 100%;
+
+
+  p {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: $blk-background;
+    flex: 1;
+    cursor: pointer;
+  }
+
+  .back,
+  .menu {
+    font-size: 24px;
+    cursor: pointer;
+    color: $blk-background;
+    width: 40px;
+    text-align: center;
+  }
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  width: 300px;
+  background-color: #ff7f00;
+  color: #000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.15);
+
+  &.open {
+    transform: translateX(0);
+  }
+  // 모바일 믹스인 적용
+  @include mobile {
+    width: 40%;
+  }
+  // 태블릿 믹스인 적용
+  @include tablet {
+    width: 300px; 
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

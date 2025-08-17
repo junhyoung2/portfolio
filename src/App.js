@@ -5,6 +5,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./app.scss";
 
 // 페이지 컴포넌트들 import
+import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import Shopping1 from "./shopping/Shopping1";
 import Shopping2 from "./shopping/Shopping2";
@@ -38,9 +39,11 @@ import Clonecoding4 from "./clonecoding/Clonecoding4";
 import Clonecoding5 from "./clonecoding/Clonecoding5";
 import Myproject from "./components/Myproject"; 
 
+
 const App = () => {
   return (
     <HashRouter>
+      <Header/>
        <ScrollToTop />
       <Routes>
        

@@ -4,6 +4,8 @@
     flex-direction: column;
     align-items: center;
     padding: 5rem 10rem;
+      min-height: 100vh;
+  
 
     .content-container {
         width: 100%;
@@ -200,7 +202,8 @@
 
     // 반응형 - 모바일
     @include mobile {
-        padding: 1rem;
+        padding: 5rem 4px;
+      
 
         .content-container {
             padding: 0 8px;
