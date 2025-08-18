@@ -53,7 +53,7 @@
   // 반응형 처리
 
   @include tablet {
-    padding: 5rem 1.5rem;
+    padding: 10rem 2rem;
 
     .cover-content {
       h2 {
@@ -76,23 +76,23 @@
   }
 
   @include mobile {
-    padding: 2.5rem 0.5rem;
+    padding: 5rem 1rem;
 
     .cover-content {
       margin-top: 5rem;
       h2 {
-        font-size: 38px;
+        font-size: 32px;
         &.highlight {
-          font-size: 46px;
+          font-size: 42px;
         }
       }
       p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         max-width: 98vw;
       }
     }
     .arrow-container-1 {
-      margin-top: 40px;
+      margin-top: 30px;
       .bottom-arrow-1 {
         font-size: 1.1rem;
       }

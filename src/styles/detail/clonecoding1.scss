@@ -1,32 +1,29 @@
 .clone-container {
   background-color: #F0EEEB;
-  padding: 10rem 5rem; // 데스크탑 기준
+  padding: 10rem 5rem;
 
   h2 {
     margin-bottom: 3rem;
     text-align: center;
-    align-items: center;
-    justify-content: center;
     @include font-gray50();
-    line-height: 1.1;
   }
 }
 
 .clone-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); // 데스크탑 기준
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-items: center;
+  justify-items: center; // grid 아이템 중앙
 }
 
 .clone-item {
-  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center; // flex 아이템 중앙
+  text-align: center;  // 텍스트 중앙
 
   img {
-    max-width: 330px;
+    max-width: 100%; // 부모 기준 최대 폭
     max-height: 430px;
     display: block;
     margin-bottom: 1rem;
@@ -47,8 +44,6 @@
     @include font-gray24();
     margin-bottom: 1rem;
     text-align: center;
-    align-items: center;
-    justify-content: center;
   }
 
   .meta-links {
@@ -59,7 +54,7 @@
     li {
       display: flex;
       align-items: center;
-    justify-content: space-evenly;
+      justify-content: space-evenly;
       padding: 5px 0;
       font-size: 16px;
       color: #505050;
@@ -84,7 +79,7 @@
   grid-column: 1 / -1;
 
   img {
-    max-width: 930px;
+    max-width: 100%;
     max-height: 530px;
     width: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,20 +91,16 @@
   }
 }
 
-// 테블릿 = 데스크탑 동일
+// 테블릿
 @include tablet {
-  .clone-container {
-    padding: 10rem 5rem;
-  }
   .clone-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-items: center;
   }
-   .clone-item {
-    align-items: center; 
-    text-align: center;   
-    justify-content: center;
+  .clone-item {
+    align-items: center;
+    text-align: center;
   }
   .clone-item img {
     max-width: 280px;
@@ -119,20 +110,13 @@
     max-width: 880px;
     max-height: 530px;
   }
-  .clone-meta .meta-title {
-    font-size: 24px;
-  }
-  .clone-meta .meta-links li {
-    font-size: 16px;
-  }
-  
 }
 
 // 모바일
 @include mobile {
   .clone-container {
-    padding: 5rem 4px;
-    h2{
+    padding: 5rem 1rem;
+    h2 {
       font-size: 38px;
       line-height: 1.1;
     }
@@ -147,24 +131,21 @@
     text-align: center;
     width: 100%;
     img {
-      max-width: 140vw;
+      max-width: 100%; // 부모 안에서 중앙
       max-height: 360px;
     }
   }
   .full-width img {
-    max-width: 99vw;
+    max-width: 100%;
     max-height: 260px;
   }
-  .clone-meta {
-    width: 100%;
-    .meta-title {
-      font-size: 22px;
-      text-align: center;
-    }
-    .meta-links li {
-      font-size: 15px;
-      justify-content: space-evenly;
-      gap: 12px;
-    }
+  .clone-meta .meta-title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .clone-meta .meta-links li {
+    font-size: 17px;
+    justify-content: space-evenly;
+    gap: 12px;
   }
 }

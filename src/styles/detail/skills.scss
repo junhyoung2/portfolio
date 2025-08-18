@@ -71,7 +71,7 @@
 
     // 반응형 처리
     @include tablet {
-        padding: 5rem;
+        padding: 10rem 5rem;
         h2 {
             margin-bottom: 134px;
             @include font-white50();
@@ -89,7 +89,7 @@
     }
 
     @include mobile {
-        padding: 5.5rem;
+        padding: 5rem 2rem;
         h2 {
             font-size: 30px;
             margin-bottom: 28px;
@@ -98,7 +98,7 @@
              width: 100%;
             height: auto;
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 15px;
         }
         ul.skills-img li {
             width: 100%;
@@ -106,12 +106,12 @@
         }
         .skill-icon-box {
             height: 100px;
-            padding: 6px;
+            padding: auto;
         }
         .skill-text-box {
             height: 28px;
             span {
-                font-size: 0.7rem;
+                font-size: 1rem;
             }
         }
     }

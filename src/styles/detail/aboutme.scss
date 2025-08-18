@@ -78,6 +78,7 @@
         }
 
         p {
+           
             margin-left: 12px;
             font-size: 28px;
             font-weight: 600;
@@ -116,9 +117,9 @@
     // 반응형 처리
 
     @include tablet {
-        padding: 2rem 1rem;
+        padding: 10rem 5rem;
         h2 {
-            font-size: 40px;
+            font-size: 50px;
             margin-bottom: 24px;
         }
         .content {
@@ -130,16 +131,17 @@
                 height: 350px;
             }
             .info li {
-                font-size: 18px;
+                font-size: 22px;
                 svg {
-                    font-size: 18px;
+                    font-size: 22px;
                 }
             }
         }
         .description {
-            font-size: 15px;
+            font-size: 20px;
             margin-top: 18px;
             margin-bottom: 24px;
+           
         }
         .git-container {
             padding: 8px 12px;
@@ -153,9 +155,9 @@
     }
 
     @include mobile {
-        padding: 1rem 0.5rem;
+        padding: 5rem 0.5rem;
         h2 {
-            font-size: 22px;
+            font-size: 32px;
             margin-bottom: 12px;
         }
         .content {
@@ -167,17 +169,19 @@
                 height: 280px;
             }
             .info li {
-                font-size: 13px;
+                font-size: 14px;
                 margin-bottom: 10px;
                 svg {
-                    font-size: 13px;
+                    font-size: 14px;
                 }
             }
         }
         .description {
-            font-size: 13px;
+            max-width: 390px;
+            font-size: 18px;
             margin-top: 10px;
             margin-bottom: 12px;
+            text-align: left;
         }
         .git-container {
             padding: 5px 8px;

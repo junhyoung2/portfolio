@@ -52,6 +52,7 @@
 // 데스크탑 = 태블릿
 @include tablet {
     #publishing {
+        padding: 10rem 5rem;
         h2 {
             font-size: 50px;
             margin-bottom: 70px;
@@ -76,7 +77,7 @@
 // 모바일 최적화
 @include mobile {
     #publishing {
-         padding: 5rem 4px;
+         padding: 5rem 1rem;
 
         h2 {
             font-size: 28px;

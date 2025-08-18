@@ -30,7 +30,7 @@
 
   // 태블릿
   @include tablet {
-    padding: 2rem 1rem;
+    padding: 10rem 2rem;
 
     h2 {
       font-size: 50px;
@@ -45,7 +45,7 @@
 
   // 모바일
   @include mobile {
-    padding: 1rem 1rem;
+ padding: 10rem 2rem;
 
     h2 {
       font-size: 40px;

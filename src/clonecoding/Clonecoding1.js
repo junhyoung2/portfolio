@@ -6,7 +6,7 @@ const Clonecoding1 = () => {
   return (
     <div className="clone-container" id="clonecoding1">
       <h2>
-        CLONE CODING <br /> PROJECT
+        CLONE CODING <br/><br/>PROJECT
       </h2>
 
       <div className="clone-grid">
