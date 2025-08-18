@@ -13,26 +13,27 @@
     }
 
     ul.skills-img {
+        width: auto;
+            height: auto;
         list-style: none;
         padding: 0;
         margin: 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 40px;
     }
 
     ul.skills-img li {
+        width: auto;
+            height: auto;
         display: flex;
         flex-direction: column;
-        width: 261px;
-        height: 320px;
         border-radius: 8px;
-        overflow: hidden;
         transition: all 0.3s ease;
         cursor: pointer;
 
         &:hover {
-            transform: translateY(-5px);
+            transform: translateY(-15px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
     }
@@ -70,39 +71,47 @@
 
     // 반응형 처리
     @include tablet {
-        padding: 10rem 5rem;
+        padding: 5rem;
         h2 {
             margin-bottom: 134px;
             @include font-white50();
         }
         ul.skills-img {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+             width: 100%;
+            height: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+        ul.skills-img li {
+            width: 100%;
+            height: auto;
         }
     }
 
     @include mobile {
-        padding: 5.5rem 1rem;
+        padding: 5.5rem;
         h2 {
             font-size: 30px;
             margin-bottom: 28px;
         }
         ul.skills-img {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
+             width: 100%;
+            height: auto;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
         ul.skills-img li {
-            width: 120px;
-            height: 100px;
+            width: 100%;
+            height: auto;
         }
         .skill-icon-box {
-            height: 60px;
+            height: 100px;
             padding: 6px;
         }
         .skill-text-box {
             height: 28px;
             span {
-                font-size: 0.9rem;
+                font-size: 0.7rem;
             }
         }
     }
