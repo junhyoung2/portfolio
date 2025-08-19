@@ -11,7 +11,7 @@ const Shopping3 = () => {
         <div id="main-project">
             <div className="content-container">
                 <div className="form">
-                    <h2>Ririm</h2>
+                    <h2>DESIGN SYSTEM</h2>
                     <img
                         src={process.env.PUBLIC_URL + "/images/shopping3.png"}
                         alt="shopping3"

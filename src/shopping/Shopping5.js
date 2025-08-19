@@ -11,7 +11,7 @@ const Shopping5 = () => {
         <div id="main-project">
             <div className="content-container">
                 <div className="form">
-                    <h2>Ririm</h2>
+                    <h2>회고</h2>
 
                     <div className="info-section">
                         <ul>
