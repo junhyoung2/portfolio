@@ -86,8 +86,7 @@
 
 .highlight-link a {
     display: inline-block;
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-                color 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s ease;
 
     &:hover {
         color: #f97316;
@@ -103,8 +102,7 @@
 @include tablet {
     #clone-coding {
         max-width: 100vw;
-         padding: 10rem 5rem;
-        
+        padding: 10rem 5rem;
     }
     .content {
         max-width: 800px;

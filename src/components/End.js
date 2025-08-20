@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const End = () => {
@@ -42,6 +42,7 @@ const End = () => {
         <h2>감사합니다.</h2>
         <h2>지금까지</h2>
         <h2 className="highlight">프론트엔드 개발자</h2>
+        
         <h2 className="myname">박준형이었습니다.</h2>
       </div>
       <div className="git-container">

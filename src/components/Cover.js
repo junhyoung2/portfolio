@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import gsap from "gsap";
 
@@ -14,7 +14,7 @@ const Cover = () => {
 
     useEffect(() => {
         const coverEl = coverRef.current;
-        // 텍스트를 span으로 쪼개기
+
         const textEls = coverEl.querySelectorAll(".cover-animated");
         textEls.forEach((el) => {
             el.innerHTML = el.textContent
@@ -28,7 +28,6 @@ const Cover = () => {
                 .join("");
         });
 
-        // 한 글자씩 순차적으로 애니메이션
         textEls.forEach((el, idx) => {
             gsap.to(el.querySelectorAll("span"), {
                 opacity: 1,
@@ -38,11 +37,9 @@ const Cover = () => {
                 delay: 0.2 + idx * 0.2,
                 ease: "power3.out",
                 y: 0,
-                from: { y: 30 },
             });
         });
 
-        // 커버 전체 scale-in 효과
         gsap.fromTo(
             coverEl,
             { scale: 0.98, filter: "blur(4px)" },
@@ -63,11 +60,7 @@ const Cover = () => {
                     <br />제 웹 포트폴리오를 방문해 주셔서 감사합니다.
                 </p>
             </div>
-            <div
-                className="arrow-container-1"
-                onClick={handleArrowClick}
-                style={{ cursor: "pointer" }}
-            >
+            <div className="arrow-container-1" onClick={handleArrowClick}>
                 <IoIosArrowDropdown className="bottom-arrow-1" />
             </div>
         </section>

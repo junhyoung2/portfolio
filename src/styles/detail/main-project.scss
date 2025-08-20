@@ -64,27 +64,20 @@
         object-fit: cover;
     }
 
-    .description {
-        @include font-gray24();
-        text-align: left;
-        margin-bottom: 30px;
-        line-height: 39px;
-    }
-
     .info-section {
         margin-bottom: 25px;
+        margin: 3rem 0;
 
         .info-title {
             font-weight: bold;
             color: #333;
             margin-bottom: 10px;
+            font-size: 38px;
         }
 
-        p,
         li {
             @include font-gray24();
             color: #666;
-
             line-height: 39px;
         }
 
@@ -97,6 +90,7 @@
         li span {
             font-weight: bold;
             color: #444;
+            font-size: 28px;
         }
     }
 
@@ -130,10 +124,6 @@
                         transform: scale(1.2);
                     }
                 }
-
-                &:active {
-                    transform: scale(0.95);
-                }
             }
         }
     }
@@ -141,7 +131,7 @@
     .arrow-container {
         display: flex;
         justify-content: flex-end;
-        // margin: 50px 0 2rem 0;
+
         cursor: pointer;
         .bottom-arrow {
             background: none;
@@ -183,10 +173,16 @@
             margin-bottom: 14px;
         }
 
-        .description,
-        .info-section p,
         .info-section li {
             font-size: 24px;
+        }
+        .info-section {
+            .info-title {
+                font-size: 28px;
+            }
+            li span {
+                font-size: 24px;
+            }
         }
 
         .arrow-container {
@@ -225,11 +221,17 @@
             margin-bottom: 12px;
         }
 
-        .description,
-        .info-section p,
         .info-section li {
             font-size: 16px;
             line-height: 1.5;
+        }
+        .info-section {
+            .info-title {
+                font-size: 24px;
+            }
+            li span {
+                font-size: 20px;
+            }
         }
 
         .arrow-container {

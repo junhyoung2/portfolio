@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
-
 import { IoIosArrowDropdown } from "react-icons/io";
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Myproject = () => {

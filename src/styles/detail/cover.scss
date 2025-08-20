@@ -1,101 +1,91 @@
 #cover {
-  background-color: $blk-background;
-  color: #fff;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10rem 5rem;
-
-  .cover-content {
-    text-align: left;
-    margin-top: 2rem;
-
-    h2 {
-      @include font-white50();
-      margin: 0 0 1.5rem 0;
-      line-height: 1.1;
-      &.highlight {
-        color: #f97316;
-        font-weight: 400;
-        font-size: 80px;
-      }
-    }
-
-    p {
-      margin-top: 2rem;
-      font-family: "Paperlogy";
-      font-weight: 500;
-      font-size: 1.25rem;
-      line-height: 1.8;
-      max-width: 900px;
-    }
-
-    .highlight {
-      color: #f97316;
-    }
-  }
-
-  .arrow-container-1 {
-    margin-top: 100px;
+    background-color: $blk-background;
+    color: #fff;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-
-    .bottom-arrow-1 {
-      @include btn-style();
-      background: none;
-      color: #f97316;
-      font-size: 2.5rem;
-    }
-  }
-
-  // 반응형 처리
-
-  @include tablet {
-    padding: 10rem 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10rem 5rem;
 
     .cover-content {
-      h2 {
-        font-size: 50px;
-        &.highlight {
-          font-size: 80px;
-        }
-      }
-      p {
+        text-align: left;
         margin-top: 2rem;
-      font-weight: 500;
-      font-size: 1.25rem;
-      line-height: 1.8;
-      max-width: 900px;
-      }
-    }
-    .arrow-container-1 .bottom-arrow-1 {
-      font-size: 1.7rem;
-    }
-  }
 
-  @include mobile {
-    padding: 5rem 1rem;
-
-    .cover-content {
-      margin-top: 5rem;
-      h2 {
-        font-size: 32px;
-        &.highlight {
-          font-size: 42px;
+        h2 {
+            @include font-white50();
+            margin: 0 0 1.5rem 0;
+            line-height: 1.1;
+            &.highlight {
+                color: #f97316;
+                font-weight: 400;
+                font-size: 80px;
+            }
         }
-      }
-      p {
-        font-size: 1.1rem;
-        max-width: 98vw;
-      }
+
+        p {
+            margin-top: 2rem;
+            font-family: "Paperlogy";
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.8;
+            max-width: 900px;
+        }
     }
+
     .arrow-container-1 {
-      margin-top: 30px;
-      .bottom-arrow-1 {
-        font-size: 1.1rem;
-      }
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        cursor: pointer;
+
+        .bottom-arrow-1 {
+            @include btn-style();
+            background: none;
+            color: #f97316;
+            font-size: 2.5rem;
+        }
     }
-  }
+
+    // 반응형 처리
+
+    @include tablet {
+        padding: 10rem 2rem;
+
+        .cover-content {
+            h2 {
+                font-size: 50px;
+                &.highlight {
+                    font-size: 80px;
+                }
+            }
+        }
+        .arrow-container-1 .bottom-arrow-1 {
+            font-size: 1.7rem;
+        }
+    }
+
+    @include mobile {
+        padding: 5rem 2rem;
+
+        .cover-content {
+            margin-top: 5rem;
+            h2 {
+                font-size: 32px;
+                &.highlight {
+                    font-size: 42px;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                max-width: 98vw;
+            }
+        }
+        .arrow-container-1 {
+            margin-top: 30px;
+            .bottom-arrow-1 {
+                font-size: 1.1rem;
+            }
+        }
+    }
 }

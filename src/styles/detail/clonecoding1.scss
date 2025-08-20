@@ -1,151 +1,133 @@
 .clone-container {
-  background-color: #F0EEEB;
-  padding: 10rem 5rem;
+    background-color: #f0eeeb;
+    padding: 10rem 5rem;
 
-  h2 {
-    margin-bottom: 3rem;
-    text-align: center;
-    @include font-gray50();
-  }
+    h2 {
+        margin-bottom: 3rem;
+        text-align: center;
+        @include font-gray50();
+    }
 }
 
 .clone-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-items: center; // grid 아이템 중앙
-}
-
-.clone-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center; // flex 아이템 중앙
-  text-align: center;  // 텍스트 중앙
-
-  img {
-    max-width: 100%; // 부모 기준 최대 폭
-    max-height: 430px;
-    display: block;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-  }
-}
-
-.clone-meta {
-  width: 100%;
-
-  .meta-title {
-    @include font-gray24();
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .meta-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    li {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      padding: 5px 0;
-      font-size: 16px;
-      color: #505050;
-      cursor: pointer;
-      transition: transform 0.2s ease, color 0.2s ease;
-
-      &:hover {
-        transform: scale(1.05);
-        color: #000;
-      }
-
-      span {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-    }
-  }
-}
-
-.full-width {
-  grid-column: 1 / -1;
-
-  img {
-    max-width: 100%;
-    max-height: 530px;
-    width: auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-    &:hover {
-      transform: scale(1.03);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-    }
-  }
-}
-
-// 테블릿
-@include tablet {
-  .clone-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     justify-items: center;
-  }
-  .clone-item {
-    align-items: center;
-    text-align: center;
-  }
-  .clone-item img {
-    max-width: 280px;
-    max-height: 430px;
-  }
-  .full-width img {
-    max-width: 880px;
-    max-height: 530px;
-  }
 }
 
-// 모바일
-@include mobile {
-  .clone-container {
-    padding: 5rem 1rem;
-    h2 {
-      font-size: 38px;
-      line-height: 1.1;
-    }
-  }
-  .clone-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    justify-items: center;
-  }
-  .clone-item {
+.clone-item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
+
     img {
-      max-width: 100%; // 부모 안에서 중앙
-      max-height: 360px;
+        max-width: 100%;
+        max-height: 430px;
+        display: block;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
     }
-  }
-  .full-width img {
-    max-width: 100%;
-    max-height: 260px;
-  }
-  .clone-meta .meta-title {
-    font-size: 22px;
-    text-align: center;
-  }
-  .clone-meta .meta-links li {
-    font-size: 17px;
-    justify-content: space-evenly;
-    gap: 12px;
-  }
+}
+
+.clone-meta {
+    width: 100%;
+
+    .meta-title {
+        @include font-gray24();
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .meta-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 5px 0;
+            font-size: 16px;
+            color: #505050;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                color: #000;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}
+
+.full-width {
+    grid-column: 1 / -1;
+
+    img {
+        max-height: 530px;
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+// 반응형: tablet
+@include tablet {
+    .clone-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .clone-item img {
+        max-width: 280px;
+        max-height: 430px;
+    }
+    .full-width img {
+        max-width: 880px;
+        max-height: 530px;
+    }
+}
+
+// 반응형: mobile
+@include mobile {
+    .clone-container {
+        padding: 5rem 1rem;
+        h2 {
+            font-size: 38px;
+            line-height: 1.1;
+        }
+    }
+    .clone-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        justify-items: center;
+    }
+    .clone-item img {
+        max-height: 360px;
+    }
+    .full-width img {
+        max-height: 260px;
+    }
+    .clone-meta .meta-title {
+        font-size: 22px;
+    }
+    .clone-meta .meta-links li {
+        font-size: 17px;
+        gap: 12px;
+    }
 }

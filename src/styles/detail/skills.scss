@@ -13,8 +13,6 @@
     }
 
     ul.skills-img {
-        width: auto;
-            height: auto;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -24,8 +22,6 @@
     }
 
     ul.skills-img li {
-        width: auto;
-            height: auto;
         display: flex;
         flex-direction: column;
         border-radius: 8px;
@@ -69,47 +65,36 @@
         }
     }
 
-    // 반응형 처리
+    // 태블릿
     @include tablet {
-        padding: 10rem 5rem;
-        h2 {
-            margin-bottom: 134px;
-            @include font-white50();
-        }
         ul.skills-img {
-             width: auto;
-            height: auto;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
-        ul.skills-img li {
-            width: auto;
-            height: auto;
-        }
     }
 
+    // 모바일
     @include mobile {
         padding: 5rem 2rem;
+
         h2 {
             font-size: 30px;
             margin-bottom: 28px;
         }
+
         ul.skills-img {
-             width: 100%;
-            height: auto;
+            width: 100%;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
         }
-        ul.skills-img li {
-            width: auto;
-            height: auto;
-        }
+
         .skill-icon-box {
             height: auto;
-            padding: auto;
         }
+
         .skill-text-box {
             height: 28px;
+
             span {
                 font-size: 1rem;
             }

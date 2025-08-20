@@ -23,7 +23,6 @@
             object-fit: cover;
             border: 1px solid #ccc;
             background-color: #fff;
-            margin-bottom: 0;
         }
 
         .info {
@@ -52,9 +51,8 @@
     }
 
     .description {
-        margin-top: 50px;
+        margin: 50px 0 58px;
         @include font-gray24();
-        margin-bottom: 58px;
         text-align: center;
     }
 
@@ -68,7 +66,7 @@
         cursor: pointer;
         user-select: none;
         transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-        background 0.3s, color 0.3s, box-shadow 0.3s;
+            background 0.3s, color 0.3s, box-shadow 0.3s;
 
         a {
             display: flex;
@@ -77,19 +75,11 @@
             color: inherit;
         }
 
-        p {
-           
-            margin-left: 12px;
+        p,
+        .git {
             font-size: 28px;
             font-weight: 600;
             color: #f97316;
-            transition: color 0.3s;
-        }
-
-        .git {
-            font-size: 28px;
-            color: #f97316;
-            background: none;
             transition: color 0.3s;
         }
 
@@ -114,10 +104,8 @@
         }
     }
 
-    // 반응형 처리
-
+    // 반응형
     @include tablet {
-        padding: 10rem 5rem;
         h2 {
             font-size: 50px;
             margin-bottom: 24px;
@@ -126,31 +114,16 @@
             flex-direction: column;
             align-items: center;
             gap: 16px;
-            img {
-                width: 270px;
-                height: 350px;
-            }
-            .info li {
+        }
+        .info li {
+            font-size: 22px;
+            svg {
                 font-size: 22px;
-                svg {
-                    font-size: 22px;
-                }
             }
         }
         .description {
             font-size: 20px;
-            margin-top: 18px;
-            margin-bottom: 24px;
-           
-        }
-        .git-container {
-            padding: 8px 12px;
-            p {
-                font-size: 28px;
-            }
-            .git {
-                font-size: 28px;
-            }
+            margin: 18px 0 24px;
         }
     }
 
@@ -164,30 +137,28 @@
             flex-direction: column;
             align-items: center;
             gap: 8px;
+
             img {
                 width: 220px;
                 height: 280px;
             }
-            .info li {
+        }
+        .info li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            svg {
                 font-size: 14px;
-                margin-bottom: 10px;
-                svg {
-                    font-size: 14px;
-                }
             }
         }
         .description {
             max-width: 390px;
             font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 12px;
+            margin: 10px 0 12px;
             text-align: left;
         }
         .git-container {
             padding: 5px 8px;
-            p {
-                font-size: 18px;
-            }
+            p,
             .git {
                 font-size: 18px;
             }

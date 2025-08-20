@@ -1,12 +1,15 @@
+
 #publishing {
     background-color: $blk-background;
     color: #fff;
     padding: 10rem 5rem;
     text-align: center;
+
     h2 {
         @include font-white50();
         margin-bottom: 70px;
     }
+
     .form {
         padding: 20px;
         max-width: 980px;
@@ -26,6 +29,11 @@
             width: 960px;
             height: 560px;
             object-fit: cover;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+             &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
         }
 
         p,
@@ -34,50 +42,55 @@
             text-align: left;
             margin: 20px auto;
             font-size: 22px;
+
             a {
                 color: #fff;
                 text-decoration: none;
+                transition: color 0.3s;
 
                 &:hover {
-                    text-decoration: underline;
                     color: #f97316;
-                    transition: color 0.3s;                    
+                    text-decoration: underline;
                 }
-                
             }
         }
     }
 }
 
-// 데스크탑 = 태블릿
+// Tablet 
 @include tablet {
     #publishing {
         padding: 10rem 5rem;
+
         h2 {
             font-size: 50px;
             margin-bottom: 70px;
         }
+
         .form {
             h2 {
                 font-size: 50px;
             }
+
             img {
                 width: 840px;
                 height: 560px;
                 margin: 40px auto;
             }
+
             p {
                 font-size: 22px;
             }
+
             max-width: 980px;
         }
     }
 }
 
-// 모바일 최적화
+// Mobile
 @include mobile {
     #publishing {
-         padding: 5rem 1rem;
+        padding: 5rem 1rem;
 
         h2 {
             font-size: 28px;
@@ -99,7 +112,8 @@
                 margin: 8px auto;
             }
 
-            p,ul {
+            p,
+            ul {
                 font-size: 14px;
                 margin: 8px auto;
             }
