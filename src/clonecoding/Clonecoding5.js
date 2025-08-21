@@ -19,7 +19,7 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> 
+                                <span>- 제작에 사용된 스킬 : </span>
                                 <br />
                                 React/Router, SCSS, GIT/GitHub, Figma,
                                 OpenWeatherMap API 연동
@@ -29,7 +29,7 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> 
+                                <span>- 이 프로젝트에서 배운 점 :</span>
                                 <br />
                                 React에서 외부 API를 연동한 뒤, 받아온 데이터를
                                 상태로 관리하고 그에 따라 UI가 동적으로 변하도록
@@ -41,7 +41,7 @@ const Clonecoding5 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>프로젝트 개요 </span> 
+                                <span>프로젝트 개요 </span>
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Chrome 확장 프로그램인 Momentum을 참고하여
@@ -63,7 +63,7 @@ const Clonecoding5 = () => {
                             <li>
                                 <span>배포방식 :</span> GitHub
                             </li>
-                       <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://github.com/junhyoung2/myday"
                                     target="_blank"
@@ -72,7 +72,7 @@ const Clonecoding5 = () => {
                                     GITHUB 바로가기 &gt;
                                 </a>
                             </li>
-                    <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://junhyoung2.github.io/myday/"
                                     target="_blank"

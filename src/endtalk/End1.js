@@ -45,7 +45,7 @@ const End1 = () => {
                                 <span>제작에 사용된 스킬 :</span> <br />- Figma,
                                 SCSS, React, GIT/GitHub
                             </li>
-                             <br />
+                            <br />
                             <li>
                                 <span>레이아웃 제작 방식 :</span> <br />
                                 - 레이아웃은 두개의 주요 화면으로 제작
@@ -53,15 +53,13 @@ const End1 = () => {
                                 화면으로 구성하여 단어 입력 및 말풍선 형태의
                                 단어 목록 등 게임 진행에 필요한 기능을
                                 포함합니다. <br />
-                                <li>
-                                    - 전체 UI는 모바일 환경에 우선 순위를 두어
-                                    제작하였으며, Flexbox를 활용하여 입력창과
-                                    단어 UI 등의 정렬을 간결하게 구현했습니다.
-                                </li>
-                                - Flexbox를 사용함으로써 요소 간 간격과 정렬을
-                                직관적으로 관리할 수 있고, 화면 크기 변화에 따라
-                                유연하게 배치가 가능하여 모바일 반응형 환경에서
-                                유지보수와 수정도 용이합니다.
+                                - 전체 UI는 모바일 환경에 우선 순위를 두어
+                                제작하였으며, Flexbox를 활용하여 입력창과 단어
+                                UI 등의 정렬을 간결하게 구현했습니다.
+                                <br />- Flexbox를 사용함으로써 요소 간 간격과
+                                정렬을 직관적으로 관리할 수 있고, 화면 크기
+                                변화에 따라 유연하게 배치가 가능하여 모바일
+                                반응형 환경에서 유지보수와 수정도 용이합니다.
                             </li>
                             <br />
                             <li>
@@ -80,11 +78,7 @@ const End1 = () => {
 
                     <ul className="meta-links">
                         <li>
-                            <div
-                                className="nav-link"
-                                onClick={goToEnd2}
-                                style={{ cursor: "pointer" }}
-                            >
+                            <div className="nav-link" onClick={goToEnd2}>
                                 <span>OVERVIEW ＞</span>
                             </div>
                         </li>

@@ -31,7 +31,7 @@ const Tower1 = () => {
                         </ul>
                     </div>
                     <div className="info-section">
-                        <p className="info-title">- 프로젝트 개요</p>
+                        <p className="info-title">- 프로젝트 개요</p> <br />
                         <ul>
                             <li>
                                 <span>UI 디자인 방식 :</span> <br /> - 어두운
@@ -70,11 +70,7 @@ const Tower1 = () => {
 
                     <ul className="meta-links">
                         <li>
-                            <div
-                                className="nav-link"
-                                onClick={goToQuiz2}
-                                style={{ cursor: "pointer" }}
-                            >
+                            <div className="nav-link" onClick={goToQuiz2}>
                                 <span>OVERVIEW ＞</span>
                             </div>
                         </li>

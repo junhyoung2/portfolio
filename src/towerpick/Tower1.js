@@ -75,7 +75,7 @@ const Tower1 = () => {
                             <div
                                 className="nav-link"
                                 onClick={goToTower2}
-                                style={{ cursor: "pointer" }}
+                               
                             >
                                 <span>OVERVIEW ＞</span>
                             </div>

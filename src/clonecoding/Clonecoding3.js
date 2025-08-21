@@ -7,10 +7,12 @@ const Clonecoding3 = () => {
                     <h3 className="project-title">NETFLIX</h3>
                     <div className="img-container">
                         <img
-        src={process.env.PUBLIC_URL + "/images/netflixpc.png"}
-        alt="netflix_pc"
-        className="project-img"
-    />
+                            src={
+                                process.env.PUBLIC_URL + "/images/netflixpc.png"
+                            }
+                            alt="netflix_pc"
+                            className="project-img"
+                        />
                     </div>
                     <p className="desc">
                         TMDB API를 활용해 받아온 영화 데이터를 슬라이드 형태로
@@ -20,7 +22,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 제작에 사용된 스킬 : </span> 
+                                <span>- 제작에 사용된 스킬 : </span>
                                 <br />
                                 React/Router, SCSS, GIT/GitHub
                             </li>
@@ -29,7 +31,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span>- 이 프로젝트에서 배운 점 :</span> 
+                                <span>- 이 프로젝트에서 배운 점 :</span>
                                 <br />
                                 외부 API에서 데이터를 받아와 컴포넌트로 전달하고
                                 화면에 출력하는 전체 흐름을 직접 경험하며 데이터
@@ -40,7 +42,7 @@ const Clonecoding3 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요  </span> 
+                                <span> 프로젝트 개요 </span>
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Netflix의 메인 페이지를 분석하여 전체적인 구조와
@@ -67,7 +69,7 @@ const Clonecoding3 = () => {
                                 <br /> slick-carousel
                             </li>
                             <li>
-                                <span>제작기간 :</span>  06.23 ~ 06.26 (4D)
+                                <span>제작기간 :</span> 06.23 ~ 06.26 (4D)
                             </li>
                             <li>
                                 <span>제작 참여율 :</span> 100%(개인프로젝트)
@@ -75,7 +77,7 @@ const Clonecoding3 = () => {
                             <li>
                                 <span>배포방식 :</span> GitHub
                             </li>
-                       <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://github.com/junhyoung2/netflix"
                                     target="_blank"
@@ -84,7 +86,7 @@ const Clonecoding3 = () => {
                                     GITHUB 바로가기 &gt;
                                 </a>
                             </li>
-                     <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://junhyoung2.github.io/netflix/"
                                     target="_blank"

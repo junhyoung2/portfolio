@@ -47,7 +47,7 @@ const Clonecoding4 = () => {
                     <div className="section">
                         <ul>
                             <li>
-                                <span> 프로젝트 개요 </span> 
+                                <span> 프로젝트 개요 </span>
                                 <br />
                                 <span>UI 디자인 방식 :</span> <br />
                                 Figma를 참고하여 Airbnb 메인 페이지의 디자인
@@ -63,7 +63,7 @@ const Clonecoding4 = () => {
                             </li>
 
                             <li>
-                                <span>제작기간 :</span>  04.30 (1D)
+                                <span>제작기간 :</span> 04.30 (1D)
                             </li>
                             <li>
                                 <span>제작 참여율 :</span> 100%(개인프로젝트)
@@ -71,7 +71,7 @@ const Clonecoding4 = () => {
                             <li>
                                 <span>배포방식 :</span> GitHub
                             </li>
-                           <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://github.com/junhyoung2/junhyoung2.github.io/tree/main/airbnb"
                                     target="_blank"
@@ -80,7 +80,7 @@ const Clonecoding4 = () => {
                                     GITHUB 바로가기 &gt;
                                 </a>
                             </li>
-                         <li className="highlight-link">
+                            <li className="highlight-link">
                                 <a
                                     href="https://junhyoung2.github.io/airbnb/index.html"
                                     target="_blank"
