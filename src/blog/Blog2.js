@@ -15,7 +15,7 @@ const Blog2 = () => {
                     <img
                         src={process.env.PUBLIC_URL + "/images/blog1.png"}
                         alt="blog1"
-                        className="project-image-end"
+                        className="project-image"
                     />
 
                     <div className="info-section">
@@ -28,8 +28,7 @@ const Blog2 = () => {
                                 보일 수 있도록 UI 구성과 시각적 완성도에 신경
                                 썼으며, 디자인 단계부터 구조를 기획하는 것을
                                 목표로 하였습니다. <br/>- Figma로 전체 화면 흐름을
-                                사전 설계한 뒤, HTML과 CSS를 통해 데스크탑
-                                환경에 최적화된 구조로 구현하였습니다.
+                                사전 설계한 뒤,HTML과 CSS를 활용해 모바일, 태블릿, 데스크탑 환경에 모두 최적화된 반응형 웹사이트를 완성했습니다.
                             </li>
                             <br />
                             <li>

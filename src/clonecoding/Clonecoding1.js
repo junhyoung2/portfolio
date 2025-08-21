@@ -8,8 +8,8 @@ const Clonecoding1 = () => {
             title: "TESLA",
             img: "tesla.png",
             overview: "/clone-coding/tesla",
-            github: "https://github.com/junhyoung2/junhyoung2.github.io/tree/main/tesla",
-            site: "https://junhyoung2.github.io/tesla/index.html",
+            github: "https://github.com/junhyoung2/tesla",
+            site: "https://junhyoung2.github.io/tesla/",
         },
         {
             title: "NETFLIX",
@@ -22,8 +22,8 @@ const Clonecoding1 = () => {
             title: "AIRBNB",
             img: "airbnb.png",
             overview: "/clone-coding/airbnb",
-            github: "https://github.com/junhyoung2/junhyoung2.github.io/tree/main/airbnb",
-            site: "https://junhyoung2.github.io/airbnb/index.html",
+            github: "https://github.com/junhyoung2/airbnb",
+            site: "https://junhyoung2.github.io/airbnb/",
         },
         {
             title: "MY DAYS",

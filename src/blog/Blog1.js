@@ -13,7 +13,7 @@ const Blog1 = () => {
                     <img
                         src={process.env.PUBLIC_URL + "/images/blog1.png"}
                         alt="blog1"
-                        className="project-image-end"
+                        className="project-image"
                     />
 
                     <div className="info-section">
@@ -81,7 +81,7 @@ const Blog1 = () => {
                         </li>
                         <li>
                             <a
-                                href="https://github.com/junhyoung2/junhyoung2.github.io/tree/main/project_nomad_planet_v3"
+                                href="https://github.com/junhyoung2/junhyoung2.github.io-nomad_planet_v4"
                                 target="_blank"
                                 rel="noreferrer"
                             >
@@ -90,7 +90,7 @@ const Blog1 = () => {
                         </li>
                         <li>
                             <a
-                                href="https://junhyoung2.github.io/project_nomad_planet_v3/index.html"
+                                href="https://junhyoung2.github.io/junhyoung2.github.io-nomad_planet_v4/"
                                 target="_blank"
                                 rel="noreferrer"
                             >
