@@ -24,7 +24,7 @@ const Clonecoding4 = () => {
                             <li>
                                 <span>- 제작에 사용된 스킬 : </span>
                                 <br />
-                                HTML, CSS, SCSS
+                                HTML, CSS
                             </li>
                         </ul>
                     </div>

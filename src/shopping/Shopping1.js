@@ -25,7 +25,7 @@ const Shopping1 = () => {
                                     {" "}
                                     - Description{" "}
                                 </span>{" "}
-                                <br /> Figma , Ririm는 ‘릴리(백합)’의 청초하고
+                                <br /> Ririm는 ‘릴리(백합)’의 청초하고
                                 순수한 이미지와 ‘꿈(Dream)’의 몽환적이고
                                 감성적인 무드를 담은 이름으로, 두 단어를 조합해
                                 탄생한 프로젝트입니다.
@@ -66,7 +66,7 @@ const Shopping1 = () => {
                                 (5D)
                             </li>
                             <li>
-                                <span>제작 참여율 :</span> <br />- 80%(5인 팀
+                                <span>제작 참여율 :</span> <br />- 70%(5인 팀
                                 프로젝트)
                             </li>
                             <li>

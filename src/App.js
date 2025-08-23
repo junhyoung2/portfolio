@@ -31,6 +31,12 @@ import Figma1 from "./figma/Figma1";
 import Figma2 from "./figma/Figma2";
 import Figma3 from "./figma/Figma3";
 import Figma4 from "./figma/Figma4";
+
+import Paperlogy1 from "./paperlogy/paperlogy1";
+import Paperlogy2 from "./paperlogy/paperlogy2";
+import Paperlogy3 from "./paperlogy/paperlogy3";
+
+
 import Clonecoding1 from "./clonecoding/Clonecoding1";
 import Publishing from "./components/Publishing";
 import Clonecoding2 from "./clonecoding/Clonecoding2";
@@ -81,6 +87,12 @@ const App = () => {
         <Route path="/figma2" element={<Figma2 />} />
         <Route path="/figma3" element={<Figma3 />} />
         <Route path="/figma4" element={<Figma4 />} />
+
+        {/* sub 포르폴리오  */}
+         <Route path="/paperlogy1" element={<Paperlogy1 />} />
+         <Route path="/paperlogy2" element={<Paperlogy2 />} />
+         <Route path="/paperlogy3" element={<Paperlogy3 />} />
+
 
         {/* 클론 코딩 페이지 */}
         <Route path="/clone-coding" element={<Clonecoding1 />} />

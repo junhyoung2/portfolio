@@ -60,7 +60,7 @@ const Tower1 = () => {
                                 (10D)
                             </li>
                             <li>
-                                <span>제작 참여율 :</span> <br />- 80%(4인 팀
+                                <span>제작 참여율 :</span> <br />- 70%(4인 팀
                                 프로젝트)
                             </li>
                             <li>

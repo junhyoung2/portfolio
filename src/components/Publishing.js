@@ -1,4 +1,4 @@
-const Publishing = () => {
+const Publishing = () => {  
     const projects = [
         {
             title: "YES24 상세 페이지",
@@ -7,7 +7,7 @@ const Publishing = () => {
             description:
                 "온라인 서점 사이트처럼 책 사진 클릭 시 ROTATE 되어 책 측/뒷면 표현",
             github: "https://github.com/junhyoung2/bookstore",
-            site: "https://junhyoung2.github.io/bookstore/index.html",
+            site: "https://junhyoung2.github.io/bookstore/",
         },
         {
             title: "Gallery",
@@ -15,8 +15,8 @@ const Publishing = () => {
             skills: ["HTML", "CSS", "JavaScript"],
             description:
                 "체크박스/라디오 버튼으로 3D 회전 메뉴 및 그리드 화면 전환",
-            github: "https://github.com/junhyoung2/junhyoung2.github.io/tree/main/galley",
-            site: "https://junhyoung2.github.io/galley/index.html",
+            github: "https://github.com/junhyoung2/galley",
+            site: "https://junhyoung2.github.io/galley/",
         },
         {
             title: "이미지 캐러셀",
@@ -24,8 +24,8 @@ const Publishing = () => {
             skills: ["HTML", "CSS", "JavaScript"],
             description:
                 "양방향 무한 루프 이동 가능, 하단 dot 클릭 시 해당 인덱스로 이동",
-            github: "https://github.com/junhyoung2/junhyoung2.github.io/tree/main/javascript/img_carousel",
-            site: "https://junhyoung2.github.io/javascript/img_carousel/index.html",
+            github: "https://github.com/junhyoung2/img_carousel",
+            site: "https://junhyoung2.github.io/img_carousel/",
         },
         {
             title: "Grid",
@@ -33,14 +33,14 @@ const Publishing = () => {
             skills: ["HTML", "CSS", "JavaScript"],
             description:
                 "쇼핑몰 컨셉, 홀수/짝수/전체 규칙에 따라 데이터를 보여주기 위한 기능",
-            github: "https://github.com/junhyoung2/junhyoung2.github.io/tree/main/javascript/0521",
-            site: "https://junhyoung2.github.io/javascript/0521/index.html",
+            github: "https://github.com/junhyoung2/grid",
+            site: "https://junhyoung2.github.io/grid/",
         },
     ];
 
     return (
         <div id="publishing">
-            <h2>PUBLISHING</h2>
+            <h2>WEB PUBLISHING</h2>
             {projects.map((project, index) => (
                 <div key={index} className="form">
                     <h2>{project.title}</h2>

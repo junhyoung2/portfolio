@@ -130,6 +130,13 @@ const Myproject = () => {
             tech: "FIGMA",
             link: "/figma1",
         },
+         {
+            title: "박준형 Sub 포트폴리오",
+            name: "Sub portfolio",
+            description: "Paperlogy st 포트폴리오",
+            tech: "HTML, CSS, JavaScript,",
+            link: "/paperlogy1",
+        }
     ];
 
     return (
@@ -172,7 +179,7 @@ const Myproject = () => {
                         className="nav-link"
                         onClick={() => navigate("/publishing")}
                     >
-                        PUBLISHING &gt;
+                        WEB PUBLISHING &gt;
                     </button>
                 </div>
                 <div className="arrow-container-2" onClick={handleArrowClick}>

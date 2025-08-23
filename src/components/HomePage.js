@@ -26,7 +26,7 @@ const HomePage = () => {
             <Aboutme />
             <Skills />
             <Myproject />
-            <End />{" "}
+            <End />
         </div>
     );
 };

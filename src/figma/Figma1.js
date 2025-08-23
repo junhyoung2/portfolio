@@ -22,7 +22,7 @@ const Figma1 = () => {
                                 <span className="info-title">
                                     - Description
                                 </span>
-                                <br /> Figma , Playmap은 사용자의 위치를
+                                <br /> Playmap은 사용자의 위치를
                                 기반으로 주변 놀이 시설 정보를 탐색할 수 있도록
                                 구성된 서비스로, 본 프로젝트는 그 초기 디자인과
                                 UI/UX 설계에 집중하였습니다.
